@@ -1,6 +1,10 @@
-# 《高级计算机系统结构》课程Project
+# 《高级计算机系统结构》课程Project实验报告
 
-王重熙 201928013229111
+## 王重熙 201928013229111
+
+本文是中国科学院大学《高级计算机体系结构》课程实验报告，使用开源的OpenROAD-flow工具链完成芯片从RTL设计到GDS版图的全流程。
+
+实验报告使用Markdown文件格式编写，转为PDF格式后字体较小，建议调整为200%查看。如果有互联网连接，可以直接访问https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/blob/master/report/report.md 查看实验报告排版效果更佳，https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/ 这个repository中的内容与在课程网站上提交的内容完全一致。
 
 ## 1 实验内容
 
@@ -52,7 +56,7 @@ OpenROAD-flow从RTL代码到GDS版图的全部流程如下图所示，RTL设计�
 
         时钟树综合是将时钟信号均匀分布到电路中的过程，尽可能减少clock skew和延迟。
 
-        OpenROAD-flow使用TritonCTS和OpenDP完成时钟树综合。
+        OpenROAD-flow使用TritonCTS完成时钟树综合。
 
     - 布线（Routing）
 
@@ -88,7 +92,7 @@ OpenROAD-flow第一种安装方法分为四步：
 
 1. 首先使用git clone克隆OpenROAD-flow的仓库：
 
-    git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow.git
+        git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow.git
 
 2. 直接从下面的网址下载pre-build好的安装包：
 
@@ -98,7 +102,7 @@ OpenROAD-flow第一种安装方法分为四步：
 
 4. 使用下面的命令更新环境变量：
 
-    source setup_env.sh
+        source setup_env.sh
 
 安装完毕后，使用以下三条命令测试安装的正确性：
 
@@ -186,7 +190,7 @@ OpenROAD-flow的仓库在尝试Option1的安装方法时已经克隆到了本地
 
 - 原因分析：
 
-    在浏览器中打开https://centos7.iuscommunity.org/ius-release.rpm ，发现连接到了一个github的issue：https://github.com/iusrepo/announce/issues/18 ，现在https://centos7.iuscommunity.org/ius-release.rpm 的链接不再维护，现在维护的是https://repo.ius.io/ius-release-el6.rpm 和https://repo.ius.io/ius-release-el7.rpm 。
+    在浏览器中打开https://centos7.iuscommunity.org/ius-release.rpm ，发现连接到了一个github的issue：https://github.com/iusrepo/announce/issues/18 ，现在https://centos7.iuscommunity.org/ius-release.rpm 的链接不再维护，现在维护的是https://repo.ius.io/ius-release-el7.rpm 。
 
 - 解决方法：
 
@@ -224,7 +228,7 @@ OpenROAD-flow默认只安装了nangate45的平台，因此我只测试了使用n
 
 ### 3.1 gcd
 
-OpenROAD-flow通过`DESIGN_CONFIG`这个变量来指定具体的设计，demo中默认的是最简单的gcd模块，只需要大约250个cell，我首先完成完成`gcd.v`在nangate45平台上从verilog到GDS版图的全流程：
+OpenROAD-flow通过`DESIGN_CONFIG`这个变量来指定具体的设计，demo中默认的是最简单的gcd模块，只需要大约几百个cell，我首先完成完成`gcd.v`在nangate45平台上从verilog到GDS版图的全流程：
 
     docker run -it openroad/flow bash
     cd flow
@@ -343,34 +347,293 @@ OpenROAD-flow通过`DESIGN_CONFIG`这个变量来指定具体的设计，demo中
 
 我使用OpenROAD-flow工具链完成了自带的demo中nangate平台上11个demo的RTL到GDS全流程，唯一失败的demo是swerv_wrapper，失败原因见问题6。
 
-在`OpenROAD-flow/flow/reports/nangate45/design_name/`中，可以看到具体每一个设计的RTL到GDS全流程的报告，下表总结了这11个成功的demo的详细数据，包括
+生成的11个demo的GDS版图由于文件大小的原因不能在实验报告中提交原始的.gds文件，于是我使用KLayout软件打开.gds文件截图进行提交，由于每个设计的版图大小不同，因此截图的缩放倍率不同，每张截图的左下角都标注了GDS版图单位网格的长度：
 
-| Name         | DIE_AREA (um)      | CORE_AREA (um)            | CLOCK_PERIOD (ns) | # Cells | Power (mW) | Design Area (um^2) | Ultilization (%) |
-| ------------ | ------------------ | ------------------------- | ----------------- | ------- | ---------- | ------------------ | ---------------- |
-| aes          | 0 0  620.15  620.6 | 10.07 11.2  610.27  610.8 |  5                |  19571  | 1.59E-03   |  1438128           | 100              |
-| black_parrot | 0 0 2200.01 2199.4 | 10.07 11.2 2189.94 2189.6 |  5.6              | 218035  | 5.52E+02   | 20003624           | 100              |
-| bp_be_top    | 0 0 1550.02 1342.6 | 10.07 11.2 1540.14 1332.8 |  5.6              |  72715  | 2.92E+02   |  8534981           | 106              |
-| bp_fe_top    | 0 0  999.97  799.4 | 10.07  9.8  989.9   789.6 |  5.6              |  45088  | 3.21E+02   |  3556117           | 116              |
-| bp_multi_top | 0 0 1550.02 1342.6 | 10.07 11.2 1540.14 1332.8 |  5.6              | 132400  | 8.53E+02   |  9117903           | 113              |
-| dynamic_node | 0 0  450.17  450   | 10.07 11.2  440.29  440.2 | 15                |  16512  | 2.26E-03   |   737122           | 100              |
-| gcd          | 0 0  100.13  100.8 | 10.07 11.2   90.25   91   | 10                |    431  | 2.89E-05   |    25593           | 100              |
-| ibex         | 0 0  600.08  599.8 | 10.07 11.2  590.01  590   | 10                |  39075  | 3.20E-03   |  1341146           | 100              |
-| jpeg         | 0 0 1200.04 1199.8 | 10.07  9.8 1189.97 1190   |  4                |  87227  | 8.41E-03   |  5570072           | 100              |
-| swerv        | 0 0 1550.02 1342.6 | 10.07 11.2 1540.14 1332.8 | 10                | 130858  | 1.03E-02   |  8088562           | 100              |
-| tinyRocket   | 0 0  924.92  799.4 | 10.07  9.8  914.85  789.6 |  5.6              |  38636  | 5.62E+01   |  2830570           | 100              |
+- aes
+
+    ![aes GDS](./image/aes.png)
+
+- black_parrot
+
+    ![black parrot GDS](./image/black_parrot.png)
+
+- black_parrot backend
+
+    ![bp_be_top GDS](./image/bp_be.png)
+
+- black_parrot frontend
+
+    ![bp_fe_top GDS](./image/bp_fe.png)
+
+- black_parrot multi
+
+    ![bp_multi_top GDS](./image/bp_multi.png)
+
+- dynamic_node
+
+    ![dynamic_node GDS](./image/dynamic_node.png)
+
+- gcd
+
+    ![gcd GDS](./image/gcd.png)
+
+- ibex
+
+    ![ibex GDS](./image/ibex.png)
+
+- jpeg
+
+    ![jpeg GDS](./image/jpeg.png)
+
+- swerv
+
+    ![swerv GDS](./image/swerv.png)
+
+- tinyRocket
+
+    ![tinyRocket GDS](./image/tinyRocket.png)
 
 
-Github上开源的RISCV处理器核（语言为verilog）
+在`OpenROAD-flow/flow/logs/nangate45/design_name/`和`OpenROAD-flow/flow/reports/nangate45/design_name/`中，可以看到具体每一个设计的RTL到GDS全流程的日志和报告，下表是`OpenROAD-flow/flow/reports/nangate45/design_name/6_final_report.rpt`中最终报告的每个芯片设计的功耗（Power）和面积（Design Area）。
 
-- OPenV/mriscv
-- Hummingbird E200
-- PicoRV32
-- SERV
-- biRISC-V
-- DarkRISCV
-- SSRV
-- Tinyriscv
+Name         | Power (mW) | Design Area (um^2)
+:----------: | :--------: | :----------------:
+aes          | 1.59E-03   |  1438128
+black_parrot | 5.52E+02   | 20003624
+bp_be_top    | 2.92E+02   |  8534981
+bp_fe_top    | 3.21E+02   |  3556117
+bp_multi_top | 8.53E+02   |  9117903
+dynamic_node | 2.26E-03   |   737122
+gcd          | 2.89E-05   |    25593
+ibex         | 3.20E-03   |  1341146
+jpeg         | 8.41E-03   |  5570072
+swerv        | 1.03E-02   |  8088562
+tinyRocket   | 5.62E+01   |  2830570
 
+## 4 向OpenROAD-flow中添加新的design
+
+### 4.1 RTL设计：rv32_toy
+
+为了熟悉向OpenROAD-flow中添加新的RTL设计的方法，我选择了一个小规模的CPU设计进行尝试。rv32_toy是本学期EDA工具及设计实践课程中我们小组的一个RV32I指令集的CPU设计，verilog源代码由周盈坤同学提供，源代码位于实验报告文件夹的`flow/src/rv32_toy/`目录下。
+
+rv32_toy是一个基于RV32I指令集设计的静态五级流水CPU，rv32_toy的结构非常简单：CPU核包含前端（FrontEnd）和后端（BackEnd）两个模块；前端负责取指令，包含FetchInst模块用于取指，以及BTB和RAS模块用于分支预测；后端包含InstDecoder模块用于译码，ALU模块用于运算，以及Regfile通用寄存器堆模块和CSRFile状态与控制寄存器。
+
+### 4.2 添加相关文件
+
+以rv32_toy为例，需要向OpenROAD-flow中添加三类文件，当然这些文件都是添加在docker容器中的：
+
+1. 在`OpenROAD-flow/flow/designs/src/rv32_toy/`文件夹中添加所有RTL设计的verilog源代码
+
+2. 在`OpenROAD-flow/flow/designs/src/rv32_toy/`文件夹中添加约束文件`rv32_toy.sdc`，通常约束文件中只需要生成时钟约束，在这里将时钟频率暂时先设置为常用的100MHz，注意时钟信号get_ports的名字要与RTL设计中保持一致：
+
+        create_clock [get_ports clock] -period 10
+
+3. 在`OpenROAD-flow/flow/designs/nangate45/`文件夹中添加`rv32_toy.mk`文件，mk文件中共export了8个参数：
+
+        export DESIGN_NICKNAME = rv32_toy
+        export DESIGN_NAME = Core
+        export PLATFORM    = nangate45
+
+        export VERILOG_FILES = $(wildcard ./designs/src/rv32_toy/*.v)
+        export SDC_FILE      = ./designs/src/rv32_toy/rv32_toy.sdc
+
+        export DIE_AREA    = x1 y1 x2 y2
+        export CORE_AREA   = x1 y1 x2 y2
+
+        export CLOCK_PERIOD = 10.000
+
+这些参数中，DESIGN_NICKNAME、DESIGN_NAME、PLATFORM、VERILOG_FILES、SDC_FILE等五项参数非常好理解，分别设定为对应的名称和文件路径即可，注意DESIGN_NAME需要与RTL设计的顶层模块名称一致。需要自己研究确定的是DIE_AREA、CORE_AREA和CLOCK_PERIOD这三项参数，给它们赋一个合法的值得到GDS版图并不难，不过我想为它们找到固定工艺下更小的设计尺寸，DIE_AREA和CORE_AREA这两项参数的确定方法将在下一节4.3节中介绍。
+
+### 4.3 mk文件中的DIE_AREA和CORE_AREA参数
+
+#### 4.3.1 DIE_AREA和CORE_AREA的含义
+
+DIE_AREA和CORE_AREA这两个参数规定了物理设计的面积，每个参数均由四个数字组成，对应两个点的坐标(x1, y1)和(x2, y2)。为了更好地理解DIE_AREA和CORE_AREA的含义，下表是第三章中成功完成RTL到GDS全流程的11个demo的详细数据，包括：
+
+- `OpenROAD-flow/flow/designs/nangate45/design_name.mk`设计文件中的DIE AREA和CORE AREA
+
+- `OpenROAD-flow/flow/reports/nangate45/design_name/synth_stat.txt`综合得到的Cell数目
+
+- `OpenROAD-flow/flow/reports/nangate45/design_name/3_post_resize.rpt`布局之后报告的芯片面积（Design Area）和利用率（Utilization）
+
+- `OpenROAD-flow/flow/reports/nangate45/design_name/6_final_report.rpt`完成所有流程后最终报告的芯片面积（Design Area）和利用率（Utilization）。
+
+Name         | DIE AREA (um) (x1, y1) (x2, y2) | CORE AREA (um) (x1, y1) (x2, y2)     | # Cells | Placement Design Area (um^2) | Placement Utilization (%) | Final Design Area (um^2) | Final Utilization (%)
+:----------: | :-----------------------------: | :----------------------------------: | :-----: | :--------------------------: | :-----------------------: | :----------------------: | :-------------------:
+aes          | (0, 0) <br> ( 620.15,  620.6)   | (10.07, 11.2) <br> ( 610.27,  610.8) |  19571  | 112168                       | 8                         |  1438128                 | 100
+black_parrot | (0, 0) <br> (2200.01, 2199.4)   | (10.07, 11.2) <br> (2189.94, 2189.6) | 218035  | 2651572                      | 14                        | 20003624                 | 105
+bp_be_top    | (0, 0) <br> (1550.02, 1342.6)   | (10.07, 11.2) <br> (1540.14, 1332.8) |  72715  | 1032332                      | 13                        |  8534981                 | 106
+bp_fe_top    | (0, 0) <br> ( 999.97,  799.4)   | (10.07,  9.8) <br> ( 989.9 ,  789.6) |  45088  | 848266                       | 28                        |  3556117                 | 116
+bp_multi_top | (0, 0) <br> (1550.02, 1342.6)   | (10.07, 11.2) <br> (1540.14, 1332.8) | 132400  | 1954760                      | 24                        |  9117903                 | 113
+dynamic_node | (0, 0) <br> ( 450.17,  450  )   | (10.07, 11.2) <br> ( 440.29,  440.2) |  16512  | 123876                       | 17                        |   737122                 | 100
+gcd          | (0, 0) <br> ( 100.13,  100.8)   | (10.07, 11.2) <br> (  90.25,   91  ) |    431  | 2625                         | 10                        |    25593                 | 100
+ibex         | (0, 0) <br> ( 600.08,  599.8)   | (10.07, 11.2) <br> ( 590.01,  590  ) |  39075  | 260432                       | 19                        |  1341146                 | 100
+jpeg         | (0, 0) <br> (1200.04, 1199.8)   | (10.07,  9.8) <br> (1189.97, 1190  ) |  87227  | 566000                       | 10                        |  5570072                 | 100
+swerv        | (0, 0) <br> (1550.02, 1342.6)   | (10.07, 11.2) <br> (1540.14, 1332.8) | 130858  | 929266                       | 11                        |  8088562                 | 100
+tinyRocket   | (0, 0) <br> ( 924.92,  799.4)   | (10.07,  9.8) <br> ( 914.85,  789.6) |  38636  | 272215                       | 10                        |  2830570                 | 100
+
+从上表中DIE_AREA、CORE_AREA、Final Design Area和Final Utilization这四列数据中可以看出：
+
+1. DIE_AREA的(x1, y1)固定为(0, 0)
+
+2. `Final Design Area = 4 * (CORE_AREA_x2 - CORE_AREA_x1) * (CORE_AREA_y2 - CORE_AREA_y1) * Final Utilization`，说明CORE_AREA这项参数规定了预设的芯片面积，且CORE_AREA中x2-x1和y2-y1代表的并不是芯片的长和宽，而是长和宽的一半，(x2, y2)这个坐标标注的是芯片设计的中间点。
+
+3. CORE_AREA的(x1, y1)取值大约固定为(10, 10)，代表DIE比CORE在每一侧都多出20um左右的空间，具体取值中的(10.07, 11.2)和(10.07, 9.8)是为了让(x, y)能够整除(0.19, 1.4)，(0.19, 0.14)应该是布局时的基本单元尺寸，由工艺参数决定。不过经过测试，DIE_AREA和CORE_AREA中的参数没必要精准写成(0.19, 0.14)的倍数，工具链会自动进行取整。
+
+4. DIE_AREA和CORE_AREA基本满足x2 = y2，也就是芯片的形状是正方形。
+
+#### 4.3.2 芯片面积的估计
+
+为了确定DIE_AREA和CORE_AREA的具体数值，需要对芯片需要的设计面积进行大体上的预估。关于芯片的面积，由于工艺限制，单位面积内的晶体管数目是固定的，因此直觉的估计是：需要的晶体管数目越多，芯片面积越大，于是我希望能够建立综合报告中Cell数目与最终芯片面积的近似的线性关系。
+
+不幸的是，OpenROAD-flow工具链demo中DIE_AREA和CORE_AREA参数的设置并没有设置到最小值，也就是说最终的芯片中会有冗余的面积，demo中的aes、dynamic_node、gcd、ibex、jpeg、swerv、tinyRocket等设计中实际利用率并没有达到100%，例如gcd的CORE_AREA设定为(10.07, 11.2), (90.25, 91)，这样gcd最终的设计面积为`4 * (90.25 - 10.07) * (91 - 11.2) = 25593 um^2`，我从(100, 100)开始，按照(10, 10)的步长依次减小CORE_AREA的(x2, y2)的数值，当CORE_AREA = (10.07, 11.2), (60, 60)时依然可以正确产生GDS版图，此时最终芯片的设计面积仅有9478 um^2；当CORE_AREA = (10.07, 11.2), (50, 50)时报错：
+
+    [ERROR] Filler area is negative!!
+    Please put higher target density or Re-floorplan to have enough coreArea
+
+说明此时才真正达到了gcd芯片面积的下限。
+
+为了更直观地感受芯片设计面积减小带来的GDS版图的变化，下图是gcd设计的CORE_AREA (x2. y2)参数从(100, 100)按步长依次减小至(60, 60)所生成的GDS版图的截图，截图中缩放比例一致，每格均为10 um。从GDS版图的截图中可以直观地看到版图的面积越来越小，空闲的面积越来越少，最终几乎版图上的所有位置都被填满。
+
+![gcd GDS](./image/gcd_cmp.png)
+
+上面这部分叙述说明的是：上表中的Final Design Area并不是芯片真正需要的最小设计面积，因此不能拿来与Cell数目进行线性回归；另外对每一个demo都进行类似上述对gcd进行的寻找最小面积的工作太耗费时间，因此为了尝试建立Cell数目与芯片面积的线性关系，我采用了布局之后的Placement Design Area和Placement Utilization进行估计，从上表中的数据可以做出这样的估计：
+
+- Cell数目与Placement Design Area有近似的正比例关系，Placement Design Area等于5.73 ~ 18.81倍的Cell数目，且除去black_parrot相关的设计，其余所有demo的Placement Design Area与Cell数目的比值都处于5.73 ~ 7.10的区间，因此估计`Placement Design Area = 6 * Cell数目`。
+
+- 在上述关于gcd设计的测试中，最小面积时也就是CORE_AREA = (10.07, 11.2), (60, 60)时，Placement Utilization = 27%，出于设计的不同略微放宽要求，假设Placement Utilization小于25%即可正常生成出GDS版图，因此估计：`Final Design Area = 4 * Placement Design Area = 24 * Cell数目`。
+
+因此，从Final Design Area就可以计算出`CORE_AREA_x2 = CORE_AREA_y2 = sqrt(Final Design Area / 4) + 10 = sqrt(6 * Cell数目) + 10`，而`DIE_AREA_x2 = DIE_AREA_y2 = CORE_AREA_x2 + 10`。
+
+### 4.4 完成rv32_toy的RTL到GDS全流程
+
+参照4.2节描述的那样添加需要的文件，目前mk文件中不确定的参数有三个：DIE_AREA、CORE_AREA和CLOCK_PERIOD，不妨先将DIE_AREA和CORE_AREA设置为非常小的数值例如"0 0 100 100"和"10.07 11.2 90 90"，将CLOCK_PERIOD设置为10.000（主频100MHz）。运行`make DESIGN_CONFIG=./designs/nangate45/rv32_toy.mk`开始rv32_toy从RTL到GDS的全流程，当然这次不会成功，只会正确执行完逻辑综合，因为设置的芯片面积太小了。在运行失败后，我们需要的是在`OpenROAD-flow/flow/reports/nangate/rv32_toy/synth_stat.txt`中找到Cell数目Number of cells: 69004，根据4.3.2节中介绍的估算芯片面积的方法，估算出DIE_AREA = "0 0 663 663"，CORE_AREA = "10.07 11.2 653 653"，修改`OpenROAD-flow/flow/designs/nangate45/rv32_toy.mk`文件中的相应参数。
+
+再次运行之前，首先使用`make clean_all DESIGN_CONFIG=./designs/nangate45/rv32_toy.mk`清除掉之前的数据，之后执行`make DESIGN_CONFIG=./designs/nangate45/rv32_toy.mk`，完成rv32_toy从RTL到GDS的全流程，rv32_toy得到的版图如下图所示，4.3.2节中估计的芯片面积还比较准确。
+
+![rv32_toy GDS](./image/rv32_toy.png)
+
+## 5 开源RISCV处理器核的RTL到GDS全流程
+
+### 5.1 开源RISCV处理器核
+
+参照老师给出的RISCV处理器核的列表网站https://github.com/riscv/riscv-cores-list ，我找出了该网站中列举的所有在Github中开源源代码且语言为Verilog的RISCV处理器核，包括：
+
+Name            | Source Code URL                                                        | ISA Version | Supplier      | License
+:-------------: | :--------------------------------------------------------------------: | :---------: | :-----------: | :-----:
+mriscv          | https://github.com/onchipuis/mriscvcore/tree/master                    | RV32I       | OnChipUIS     | MIT
+HummingbirdE203 | https://github.com/SI-RISCV/e200_opensource/tree/master/rtl/e203       | RV32IMAC    | Bob Hu        | Apache 2.0
+picorv32        | https://github.com/cliffordwolf/picorv32/blob/master/picorv32.v        | RV32I       | Clifford Wolf | ISC
+serv            | https://github.com/olofk/serv/tree/master/rtl                          | RV32I       | Olof Kindgren | ISC
+biriscv         | https://github.com/ultraembedded/biriscv/tree/master/src               | RV32IM      | UltraEmbedded | Apache 2.0
+darkriscv       | https://github.com/darklife/darkriscv/tree/master/rtl                  | RV32I       | Darklife      | BSD
+tinyriscv       | https://github.com/liangkangnan/tinyriscv/tree/master/rtl/core         | RV32I       | Blue Liang    | Apache 2.0
+
+### 5.2 开源RISCV处理器核RTL到GDS全流程结果对比
+
+参照第4章中描述的向OpenROAD-flow中添加新的设计的方法，我使用OpenROAD工具链完成了5.1节中列举的7个开源RISCV处理器核的RTL到GDS全流程，这些设计的源代码和sdc文件见实验报告目录下`/flow/designs/src/design_name/`，mk文件见实验报告目录下`/flow/designs/nangate/design_name.mk`，最终的GDS版图截图见实验报告目录下`/GDS/`。mk文件中DIE_AREA和CORE_AREA均按照4.3.2节中的方法进行估计，仅在serv和biriscv中有所调整；时钟频率均设定为100MHz。在这里报告以下这些处理器核RTL到GDS全流程的相关数据：
+
+Name            | DIE AREA (um) (x1, y1) (x2, y2) | CORE AREA (um) (x1, y1) (x2, y2)     | # Cells | Power (mW) | Final Design Area (um^2) | Final Utilization (%)
+:-------------: | :-----------------------------: | :----------------------------------: | :-----: | :--------: | :----------------------: | :-------------------:
+mriscv          | (0, 0) <br> (135, 135)          | (10.07, 11.2) <br> (125, 125)        | 2218    | 2.47e-04   | 52055                    | 100
+HummingbirdE203 | (0, 0) <br> (444, 444)          | (10.07, 11.2) <br> (434, 434)        | 29925   | 1.89e-03   | 716883                   | 100
+picorv32        | (0, 0) <br> (309, 309)          | (10.07, 11.2) <br> (299, 299)        | 13941   | 1.34e-03   | 331542                   | 100
+serv            | (0, 0) <br> (112, 112)          | (10.07, 11.2) <br> (102, 102)        | 1406    | 1.78e-04   | 39102                    | 100
+biriscv         | (0, 0) <br> (830, 830)          | (10.07, 11.2) <br> (820, 820)        | 109418  | 6.41e-03   | 2616561                  | 100
+darkriscv       | (0, 0) <br> (369, 369)          | (10.07, 11.2) <br> (359, 359)        | 20248   | 1.82e-03   | 484469                   | 100
+tinyriscv       | (0, 0) <br> (435, 435)          | (10.07, 11.2) <br> (425, 425)        | 28717   | 5.62e+01   | 2830570                  | 100
+
+它们的版图同样使用KLayout软件打开.gds文件截图进行提交：
+
+- mriscv
+
+    ![mriscv GDS](./image/mriscv.png)
+
+- HummingbirdE203
+
+    ![HummingbirdE203 GDS](./image/HummingbirdE203.png)
+
+- picorv32
+
+    ![picorv32 GDS](./image/picorv32.png)
+
+- serv
+
+    ![serv GDS](./image/serv.png)
+
+- biriscv
+
+    ![biriscv GDS](./image/biriscv.png)
+
+- darkriscv
+
+    ![darkriscv GDS](./image/darkriscv.png)
+
+- tinyriscv
+
+    ![tinyriscv GDS](./image/tinyriscv.png)
+
+可以看到，这些版图的利用率较高，相比于demo中的11个版图有着明显的提高，说明4.3.2节中对OpenROAD-flow工具链生成芯片面积的估计比较准确。
+
+## 6 总结
+
+### 6.1 工作回顾
+
+本文主要进行了以下四方面的工作：
+
+1. 在CentOS虚拟机中使用docker成功安装OpenROAD-flow工具链。
+
+2. 使用OpenROAD-flow工具链成功完成11个demo的RTL到GDS全流程。
+
+3. 实现向OpenROAD-flow工具链中添加新的设计rv32_toy，并根据demo摸索出准确设置DIE_AREA和CORE_AREA的方法。
+
+4. 使用OpenROAD-flow工具链成功完成7个开源的RISCV处理器核的RTL到GDS全流程。
+
+实验的所有流程均在本文中展示，读者可根据本文逐步完成OpenROAD-flow工具链的安装与使用。
+
+由于实验得到的文件夹太大，无法在课程网站上提交，因此我将实验得到的所有GDS版图截图并在本文中展示。由于课程网站的容量限制，我在课程网站中提交的实验报告文件夹包括这些内容;
+
+- `/report.pdf`，实验报告pdf，即本文。
+
+- `/GDS/`，所有19个生成的GDS版图文件的截图。
+
+- `/flow/designs/src/...`，所有的源文件及SDC文件。
+
+- `/flow/designs/nangate45/`，所有的mk文件。
+
+- `/flow/reports/nangate45/...`，所有OpenROAD-flow生成的报告。
+
+将以上`/flow/designs/`文件夹中的所有内容拷贝到docker容器对应文件夹中即可完整复现本文中的所有实验内容。
+
+完整的`/flow/`文件夹放在百度网盘上：https://pan.baidu.com/s/1W-uYokpS5s0O5UtC7FIe9w ，提取码：rx5o，完整的flow文件夹中主要包括：
+
+- `/designs/`，所有的设计文件，包括`/designs/src/design_name/`中的verilog源代码以及SDC文件，还有`/designs/nangate45/design_name.mk`的mk文件。
+
+- `/logs/nangate45/`，OpenROAD-flow工具链生成的日志文件，每个设计对应一个子文件夹。
+
+- `/objects/nangate45/`，OpenROAD-flow工具链生成的object文件，每个设计对应一个子文件夹。
+
+- `/reports/nangate45/`，OpenROAD-flow工具链生成的报告文件，每个设计对应一个子文件夹，`/reports/nangate45/design_name/6_final_report.rpt`是每个设计的最终报告。
+
+- `/results/nangate45/`，OpenROAD-flow工具链生成的结果文件，每个设计对应一个子文件夹，`/results/nangate45/design_name/6_final.gds`是每个设计最终生成的GDS版图文件。
+
+### 6.2 问题记录
+
+本次实验总共记录到6个问题，详情请查看本文中问题1-问题6的详细记录。
+
+其中问题1-问题5出现在OpenROAD-flow的安装阶段，通过解决这些问题我最终成功安装了OpenROAD-flow工具链。
+
+问题6出现在demo中的swerv_wrapper的RTL到GDS全流程，最终报告时序错误，我通过调整时钟频率未能解决问题。
+
+除demo中的swerv_wrapper，我在其余19个设计的RTL到GDS全流程中基本没有遇到问题，偶尔遇到的执行错误全部跟芯片面积DIE_AREA和CORE_AREA的设置有关，只要芯片面积设置的足够大就没有出现问题。实际上，我在4.3.2节中详细研究了DIE_AREA和CORE_AREA的设置方法，这种估计方法基本能够逼近OpenROAD-flow工具链在具体设计上的芯片面积下限，在4.4节和5.2节中完成的8项设计的RTL到GDS全流程的设计按照本文中估计给出的参数均没有遇到问题。
+
+### 6.3 建议与展望
+
+在使用OpenROAD-flow工具链的过程中，我主要有两点建议：
+
+1. 我在完成这项实验的过程中，基本所有的不愉快都来源于安装过程，`yum install`和`git clone`这两条命令在中国的网络环境中简直是灾难，如果要在国内大规模推广OpenROAD-flow这个开源EDA工具链，建立国内的镜像源甚至直接发布免安装的docker镜像将会极大地方便人们的使用。
+
+2. 我使用了Core i7-7700HQ + 8GB 2400 DDR4的CentOS虚拟机完成的此项实验，内存方面倒是没有因为内存不足而造成问题，但是运行时间方面，向black_parrot这种规模稍微大一些的设计需要几个小时才能完成RTL到GDS的全流程。我的虚拟机处理器设置处理器内核数量为8，但是OpenROAD-flow工具链完全不能利用多核多线程。虽然OpenROAD-flow的报告中CPU利用率基本都高达97%-100%，但是在资源管理器中看到整个虚拟机的CPU占用也就处于20%-30%，如果OpenROAD-flow工具链可以利用多线程，那么运行速度将会有很大的提升，带来更好的用户体验。
 
 ## 参考文献
 - https://blog.csdn.net/babyxue/article/details/80970526 ，CentOS安装
@@ -379,4 +642,4 @@ Github上开源的RISCV处理器核（语言为verilog）
 - https://blog.abdelrahmanhosny.me/tech/eda/2019-12-06-getting-started-with-openroad-1/ ，OpenROAD Getting Started
 - https://blog.abdelrahmanhosny.me/tech/eda/2019-12-06-getting-started-with-openroad-2/ ，OpenROAD Getting Started
 - https://www.cnblogs.com/yufeng218/p/8370670.html ，docker安装
-- https://blog.csdn.net/qq_29999343/article/details/78294604 ，docker设置开机启动项
+- https://github.com/The-OpenROAD-Project/OpenROAD-flow/tree/master/flow ，OpenROAD-flow流程

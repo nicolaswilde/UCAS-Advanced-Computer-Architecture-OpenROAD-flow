@@ -1,0 +1,86 @@
+
+29. Printing statistics.
+
+=== tinyriscv ===
+
+   Number of wires:              30378
+   Number of wire bits:          30606
+   Number of public wires:        1759
+   Number of public wire bits:    1987
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              28717
+     AND2_X1                      1446
+     AND2_X2                       105
+     AND2_X4                        54
+     AND3_X1                       743
+     AND3_X2                        23
+     AND3_X4                        16
+     AND4_X1                       122
+     AND4_X4                         1
+     AOI211_X4                     530
+     AOI21_X1                     1398
+     AOI21_X2                       24
+     AOI21_X4                       21
+     AOI221_X1                       2
+     AOI221_X2                       1
+     AOI221_X4                     266
+     AOI22_X1                      183
+     AOI22_X2                        1
+     BUF_X1                       5203
+     BUF_X16                         2
+     BUF_X2                        251
+     BUF_X4                       1150
+     BUF_X8                        116
+     CLKBUF_X1                      32
+     CLKBUF_X2                     252
+     CLKBUF_X3                       4
+     DFF_X1                       1774
+     INV_X1                       1149
+     INV_X16                         1
+     INV_X2                         48
+     INV_X32                         6
+     INV_X4                         10
+     INV_X8                          5
+     MUX2_X1                      1773
+     MUX2_X2                        63
+     NAND2_X1                     2459
+     NAND2_X2                       37
+     NAND2_X4                       12
+     NAND3_X1                     1301
+     NAND3_X2                       10
+     NAND3_X4                       10
+     NAND4_X1                      188
+     NAND4_X2                        3
+     NAND4_X4                        1
+     NOR2_X1                       854
+     NOR2_X2                        39
+     NOR2_X4                        25
+     NOR3_X1                       527
+     NOR3_X2                         6
+     NOR3_X4                        10
+     NOR4_X1                       160
+     NOR4_X4                         2
+     OAI211_X2                    1139
+     OAI21_X1                     1405
+     OAI21_X2                       13
+     OAI21_X4                       12
+     OAI221_X1                     100
+     OAI22_X1                       69
+     OAI22_X4                        1
+     OR2_X1                        644
+     OR2_X2                          9
+     OR2_X4                          8
+     OR3_X1                        423
+     OR3_X2                          1
+     OR3_X4                         11
+     OR4_X1                         34
+     OR4_X4                          2
+     XNOR2_X1                      721
+     XNOR2_X2                       63
+     XOR2_X1                      1413
+     XOR2_X2                       230
+
+   Chip area for module '\tinyriscv': 42290.276000
+

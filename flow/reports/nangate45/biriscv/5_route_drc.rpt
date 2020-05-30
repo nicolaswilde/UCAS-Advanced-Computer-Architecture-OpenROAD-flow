@@ -1,0 +1,168 @@
+  violation type: Short
+    srcs: _075495_ _098756_ 
+    bbox = ( 726.565, 779.135 ) - ( 726.69, 779.205 ) on Layer metal1
+  violation type: CutSpc
+    srcs: _094312_ 
+    bbox = ( 13.93, 300.265 ) - ( 14, 300.335 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_168_0_clk_i 
+    bbox = ( 42.81, 755.965 ) - ( 42.88, 756.035 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _093558_ 
+    bbox = ( 109.085, 691.32 ) - ( 109.225, 691.46 ) on Layer metal5
+  violation type: CutSpc
+    srcs: net460 
+    bbox = ( 131.66, 241.465 ) - ( 131.73, 241.535 ) on Layer metal3
+  violation type: CutSpc
+    srcs: net459 
+    bbox = ( 131.92, 285.565 ) - ( 131.99, 285.635 ) on Layer metal2
+  violation type: Short
+    srcs: _014474_ _094874_ 
+    bbox = ( 146.36, 550.165 ) - ( 146.43, 550.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: net468 
+    bbox = ( 177.14, 241.465 ) - ( 177.21, 241.535 ) on Layer metal2
+  violation type: CutSpc
+    srcs: net468 
+    bbox = ( 176.19, 241.465 ) - ( 176.26, 241.535 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDD net469 
+    bbox = ( 179.84, 277.285 ) - ( 179.87, 277.34 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDDPE net469 
+    bbox = ( 179.84, 277.285 ) - ( 179.87, 277.34 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDDCE net469 
+    bbox = ( 179.84, 277.285 ) - ( 179.87, 277.34 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _044456_ 
+    bbox = ( 205.45, 432.565 ) - ( 205.52, 432.635 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _043355_ 
+    bbox = ( 234.71, 241.465 ) - ( 234.78, 241.535 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _043355_ 
+    bbox = ( 235.26, 241.465 ) - ( 235.33, 241.535 ) on Layer metal3
+  violation type: CutSpc
+    srcs: _025994_ 
+    bbox = ( 265.11, 35.665 ) - ( 265.18, 35.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _025994_ 
+    bbox = ( 263.4, 35.665 ) - ( 263.47, 35.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _025736_ 
+    bbox = ( 256.085, 43.96 ) - ( 256.225, 44.1 ) on Layer metal4
+  violation type: CutSpc
+    srcs: _029820_ 
+    bbox = ( 295.7, 50.365 ) - ( 295.77, 50.435 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _029820_ 
+    bbox = ( 293.22, 50.365 ) - ( 293.29, 50.435 ) on Layer metal3
+  violation type: CutSpc
+    srcs: clknet_7_18_0_clk_i 
+    bbox = ( 293.8, 197.365 ) - ( 293.87, 197.435 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_7_18_0_clk_i 
+    bbox = ( 294.75, 197.365 ) - ( 294.82, 197.435 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _095435_ 
+    bbox = ( 294.18, 594.265 ) - ( 294.25, 594.335 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _095435_ 
+    bbox = ( 293.42, 594.265 ) - ( 293.49, 594.335 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _053444_ 
+    bbox = ( 338.545, 623.7 ) - ( 338.685, 623.84 ) on Layer metal5
+  violation type: CutSpc
+    srcs: _022686_ 
+    bbox = ( 368.28, 403.165 ) - ( 368.35, 403.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _022686_ 
+    bbox = ( 363.72, 403.165 ) - ( 363.79, 403.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _039219_ 
+    bbox = ( 397.54, 79.765 ) - ( 397.61, 79.835 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _061644_ 
+    bbox = ( 410.08, 212.065 ) - ( 410.15, 212.135 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _059939_ 
+    bbox = ( 441.62, 373.765 ) - ( 441.69, 373.835 ) on Layer metal3
+  violation type: MetSpc
+    srcs: VDDPE net357 
+    bbox = ( 459.86, 271.685 ) - ( 459.93, 271.74 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDD net357 
+    bbox = ( 459.86, 271.685 ) - ( 459.93, 271.74 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDDCE net357 
+    bbox = ( 459.86, 271.685 ) - ( 459.93, 271.74 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_210_0_clk_i 
+    bbox = ( 455.49, 550.165 ) - ( 455.56, 550.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_210_0_clk_i 
+    bbox = ( 456.18, 550.165 ) - ( 456.25, 550.235 ) on Layer metal3
+  violation type: Short
+    srcs: _082661_ _082678_ 
+    bbox = ( 491.145, 426.335 ) - ( 491.28, 426.405 ) on Layer metal1
+  violation type: CutSpc
+    srcs: _086722_ 
+    bbox = ( 530.38, 461.965 ) - ( 530.45, 462.035 ) on Layer metal3
+  violation type: CutSpc
+    srcs: _067035_ 
+    bbox = ( 528.26, 476.665 ) - ( 528.33, 476.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _082824_ 
+    bbox = ( 559.78, 535.465 ) - ( 559.85, 535.535 ) on Layer metal3
+  violation type: CutSpc
+    srcs: net403 
+    bbox = ( 557.33, 697.165 ) - ( 557.4, 697.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_272_0_clk_i 
+    bbox = ( 590.2, 109.165 ) - ( 590.27, 109.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _072430_ 
+    bbox = ( 588.3, 638.365 ) - ( 588.37, 638.435 ) on Layer metal2
+  violation type: MetSpc
+    srcs: VDD _066831_ 
+    bbox = ( 623.68, 252.285 ) - ( 623.685, 252.315 ) on Layer metal1
+  violation type: NSMet
+    srcs: _066831_ 
+    bbox = ( 623.68, 252.35 ) - ( 623.73, 252.385 ) on Layer metal1
+  violation type: MetSpc
+    srcs: VDD _066831_ 
+    bbox = ( 623.68, 252.285 ) - ( 623.7, 252.315 ) on Layer metal1
+  violation type: CutSpc
+    srcs: _087172_ 
+    bbox = ( 630.86, 314.965 ) - ( 630.93, 315.035 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _073602_ 
+    bbox = ( 648.53, 726.565 ) - ( 648.6, 726.635 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _073602_ 
+    bbox = ( 646.44, 726.565 ) - ( 646.51, 726.635 ) on Layer metal2
+  violation type: CutSpc
+    srcs: net343 
+    bbox = ( 692.04, 241.465 ) - ( 692.11, 241.535 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_325_0_clk_i 
+    bbox = ( 706.1, 20.965 ) - ( 706.17, 21.035 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _086907_ 
+    bbox = ( 719.4, 329.665 ) - ( 719.47, 329.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _067072_ 
+    bbox = ( 751.32, 373.765 ) - ( 751.39, 373.835 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _074836_ 
+    bbox = ( 764.43, 682.465 ) - ( 764.5, 682.535 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _074637_ 
+    bbox = ( 780.01, 638.365 ) - ( 780.08, 638.435 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_501_0_clk_i 
+    bbox = ( 809.27, 608.965 ) - ( 809.34, 609.035 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_501_0_clk_i 
+    bbox = ( 807.18, 608.965 ) - ( 807.25, 609.035 ) on Layer metal2

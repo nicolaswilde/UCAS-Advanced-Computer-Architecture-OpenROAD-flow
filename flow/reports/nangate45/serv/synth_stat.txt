@@ -1,0 +1,59 @@
+
+29. Printing statistics.
+
+=== serv_top ===
+
+   Number of wires:               1504
+   Number of wire bits:           1682
+   Number of public wires:         135
+   Number of public wire bits:     313
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1406
+     AND2_X1                        37
+     AND2_X2                         2
+     AND2_X4                         2
+     AND3_X1                        12
+     AND4_X1                        11
+     AOI211_X2                       3
+     AOI211_X4                       7
+     AOI21_X1                       26
+     AOI21_X2                        1
+     AOI221_X4                       1
+     AOI22_X1                        7
+     BUF_X1                        532
+     BUF_X2                          1
+     BUF_X4                         28
+     DFF_X1                        204
+     INV_X1                         98
+     INV_X2                          3
+     INV_X32                         1
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                       192
+     MUX2_X2                         2
+     NAND2_X1                       31
+     NAND2_X2                        1
+     NAND3_X1                       23
+     NAND4_X1                        9
+     NOR2_X1                        40
+     NOR2_X4                         2
+     NOR3_X1                         8
+     NOR4_X1                         7
+     OAI211_X2                      11
+     OAI21_X1                       33
+     OAI21_X2                        1
+     OAI21_X4                        1
+     OAI221_X1                       3
+     OAI22_X1                       30
+     OR2_X1                          9
+     OR3_X1                          2
+     OR3_X4                          1
+     OR4_X1                          3
+     XNOR2_X1                       10
+     XNOR2_X2                        2
+     XOR2_X1                         7
+
+   Chip area for module '\serv_top': 2258.074000
+

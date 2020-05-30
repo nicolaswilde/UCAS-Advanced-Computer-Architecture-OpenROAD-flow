@@ -1,0 +1,86 @@
+
+18. Printing statistics.
+
+=== ibex_core ===
+
+   Number of wires:              42739
+   Number of wire bits:          42944
+   Number of public wires:        5993
+   Number of public wire bits:    6198
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              39075
+     AND2_X1                      2817
+     AND2_X2                       157
+     AND2_X4                        21
+     AND3_X1                       809
+     AND3_X2                        27
+     AND3_X4                        14
+     AND4_X1                       358
+     AND4_X2                         1
+     AOI211_X2                      15
+     AOI211_X4                     364
+     AOI21_X1                     1609
+     AOI21_X2                       24
+     AOI21_X4                        3
+     AOI221_X1                       2
+     AOI221_X4                      66
+     AOI22_X1                      282
+     AOI22_X2                        4
+     BUF_X1                      11096
+     BUF_X16                         1
+     BUF_X2                        617
+     BUF_X32                         1
+     BUF_X4                       1032
+     BUF_X8                         37
+     CLKBUF_X2                     512
+     CLKBUF_X3                      13
+     DFFR_X1                      3744
+     DFFS_X1                         3
+     INV_X1                       1541
+     INV_X2                         56
+     INV_X32                         6
+     INV_X4                          8
+     INV_X8                          3
+     LOGIC0_X1                       1
+     MUX2_X1                      2631
+     MUX2_X2                       128
+     NAND2_X1                     1446
+     NAND2_X2                        9
+     NAND2_X4                        7
+     NAND3_X1                     1078
+     NAND3_X2                        3
+     NAND4_X1                      818
+     NAND4_X2                        1
+     NOR2_X1                      1206
+     NOR2_X2                        57
+     NOR2_X4                        12
+     NOR3_X1                       919
+     NOR3_X2                         7
+     NOR3_X4                        14
+     NOR4_X1                       575
+     NOR4_X2                         1
+     NOR4_X4                         1
+     OAI211_X2                     598
+     OAI211_X4                       1
+     OAI21_X1                     1648
+     OAI21_X2                        5
+     OAI21_X4                        2
+     OAI221_X1                     112
+     OAI221_X2                       1
+     OAI22_X1                       69
+     OR2_X1                        404
+     OR2_X2                          9
+     OR2_X4                          6
+     OR3_X1                        798
+     OR3_X2                          5
+     OR3_X4                          2
+     OR4_X1                        357
+     OR4_X4                          1
+     XNOR2_X1                      487
+     XNOR2_X2                        7
+     XOR2_X1                       406
+
+   Chip area for module '\ibex_core': 60026.092000
+

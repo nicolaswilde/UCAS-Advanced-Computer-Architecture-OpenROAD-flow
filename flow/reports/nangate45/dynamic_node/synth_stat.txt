@@ -1,0 +1,83 @@
+
+17. Printing statistics.
+
+=== dynamic_node_top_wrap ===
+
+   Number of wires:              18467
+   Number of wire bits:          19124
+   Number of public wires:        2281
+   Number of public wire bits:    2938
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              16512
+     AND2_X1                       470
+     AND2_X2                        93
+     AND2_X4                        26
+     AND3_X1                       202
+     AND3_X2                        10
+     AND3_X4                         4
+     AND4_X1                        35
+     AND4_X2                         2
+     AND4_X4                         5
+     AOI211_X2                      14
+     AOI211_X4                      58
+     AOI21_X1                      471
+     AOI21_X2                       11
+     AOI21_X4                        2
+     AOI221_X1                       3
+     AOI221_X2                       1
+     AOI221_X4                     309
+     AOI22_X1                       92
+     BUF_X1                       5283
+     BUF_X16                        25
+     BUF_X2                         50
+     BUF_X32                        35
+     BUF_X4                        529
+     BUF_X8                          7
+     CLKBUF_X2                     126
+     DFF_X1                       2250
+     INV_X1                        387
+     INV_X16                         1
+     INV_X2                         17
+     INV_X4                          3
+     INV_X8                          1
+     MUX2_X1                      3098
+     MUX2_X2                        23
+     NAND2_X1                      185
+     NAND2_X2                       15
+     NAND2_X4                        3
+     NAND3_X1                      456
+     NAND3_X2                        2
+     NAND4_X1                      149
+     NOR2_X1                       301
+     NOR2_X2                        25
+     NOR2_X4                         4
+     NOR3_X1                        95
+     NOR3_X2                         1
+     NOR3_X4                         2
+     NOR4_X1                        33
+     NOR4_X2                         3
+     NOR4_X4                         4
+     OAI211_X2                     219
+     OAI211_X4                       2
+     OAI21_X1                      179
+     OAI21_X2                        8
+     OAI221_X1                      93
+     OAI221_X2                       1
+     OAI22_X1                      133
+     OR2_X1                        684
+     OR2_X2                         14
+     OR2_X4                         14
+     OR3_X1                         41
+     OR3_X2                          4
+     OR3_X4                          3
+     OR4_X1                          3
+     OR4_X2                          3
+     XNOR2_X1                      137
+     XNOR2_X2                       16
+     XOR2_X1                        36
+     XOR2_X2                         1
+
+   Chip area for module '\dynamic_node_top_wrap': 28826.154000
+

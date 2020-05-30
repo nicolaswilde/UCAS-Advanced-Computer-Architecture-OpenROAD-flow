@@ -1,0 +1,55 @@
+
+==========================================================================
+report_checks
+--------------------------------------------------------------------------
+Startpoint: be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem
+            (rising edge-triggered flip-flop clocked by CLK)
+Endpoint: lce_tr_resp_o[370] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem/clk (fakeram45_512x64)
+   0.27    0.27 v be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem/rd_out[50] (fakeram45_512x64)
+   4.63    4.90 v _124691_/Z (BUF_X1)
+   0.30    5.20 ^ _105214_/ZN (INV_X1)
+   0.09    5.29 v _106858_/ZN (OAI221_X1)
+   0.12    5.41 ^ _106859_/ZN (AOI211_X4)
+   0.02    5.43 v _106861_/ZN (NOR3_X1)
+   0.05    5.48 ^ _106863_/ZN (OAI221_X1)
+   0.09    5.57 ^ _106865_/ZN (AND2_X1)
+   0.04    5.61 v _113201_/ZN (AOI21_X1)
+   0.26    5.87 v _133613_/Z (BUF_X1)
+   1.25    7.12 v lce_tr_resp_o[370] (out)
+           7.12   data arrival time
+
+   5.40    5.40   clock CLK (rise edge)
+   0.00    5.40   clock network delay (ideal)
+   0.00    5.40   clock reconvergence pessimism
+  -0.60    4.80   output external delay
+           4.80   data required time
+---------------------------------------------------------
+           4.80   data required time
+          -7.12   data arrival time
+---------------------------------------------------------
+          -2.32   slack (VIOLATED)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns -542.78
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns -2.32
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 938056 u^2 12% utilization.

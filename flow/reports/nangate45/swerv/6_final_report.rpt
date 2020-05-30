@@ -1,0 +1,694 @@
+
+==========================================================================
+report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: _244470_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _240742_ (removal check against rising-edge clock core_clock)
+Path Group: **async_default**
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _244470_/CK (DFFR_X1)
+   0.10    0.10 ^ _244470_/Q (DFFR_X1)
+   0.02    0.12 ^ buffer2584/Z (BUF_X1)
+   0.03    0.14 ^ _224640_/Z (CLKBUF_X1)
+   0.03    0.18 ^ buffer2583/Z (BUF_X1)
+   0.02    0.20 v _218464_/ZN (OAI21_X2)
+   0.03    0.22 ^ _218465_/ZN (INV_X4)
+   0.02    0.24 ^ _240588_/Z (BUF_X32)
+   0.03    0.27 ^ buffer2588/Z (BUF_X1)
+   0.02    0.30 ^ buffer2581/Z (BUF_X1)
+   0.65    0.94 ^ buffer2587/Z (BUF_X1)
+   0.00    0.94 ^ _240742_/RN (DFFR_X1)
+           0.94   data arrival time
+
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _240742_/CK (DFFR_X1)
+   0.93    0.93   library removal time
+           0.93   data required time
+---------------------------------------------------------
+           0.93   data required time
+          -0.94   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+Startpoint: _240707_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _243638_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _240707_/CK (DFFR_X1)
+   0.06    0.06 ^ _240707_/QN (DFFR_X1)
+   0.00    0.06 ^ _243638_/D (DFFR_X1)
+           0.06   data arrival time
+
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _243638_/CK (DFFR_X1)
+   0.01    0.01   library hold time
+           0.01   data required time
+---------------------------------------------------------
+           0.01   data required time
+          -0.06   data arrival time
+---------------------------------------------------------
+           0.06   slack (MET)
+
+
+
+==========================================================================
+report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: _244470_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _240742_ (recovery check against rising-edge clock core_clock)
+Path Group: **async_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _244470_/CK (DFFR_X1)
+   0.10    0.10 ^ _244470_/Q (DFFR_X1)
+   0.02    0.12 ^ buffer2584/Z (BUF_X1)
+   0.03    0.14 ^ _224640_/Z (CLKBUF_X1)
+   0.03    0.18 ^ buffer2583/Z (BUF_X1)
+   0.02    0.20 v _218464_/ZN (OAI21_X2)
+   0.03    0.23 ^ _218465_/ZN (INV_X4)
+   0.02    0.25 ^ _240588_/Z (BUF_X32)
+   0.03    0.28 ^ buffer2588/Z (BUF_X1)
+   0.02    0.30 ^ buffer2581/Z (BUF_X1)
+   0.65    0.94 ^ buffer2587/Z (BUF_X1)
+   0.00    0.94 ^ _240742_/RN (DFFR_X1)
+           0.94   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _240742_/CK (DFFR_X1)
+  -0.08    9.92   library recovery time
+           9.92   data required time
+---------------------------------------------------------
+           9.92   data required time
+          -0.94   data arrival time
+---------------------------------------------------------
+           8.97   slack (MET)
+
+
+Startpoint: _247328_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _243586_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _247328_/CK (DFFR_X1)
+   0.08    0.08 v _247328_/Q (DFFR_X1)
+   0.03    0.12 v _220905_/Z (CLKBUF_X2)
+   0.08    0.19 v _128116_/ZN (OR3_X1)
+   0.10    0.29 v _128117_/ZN (OR4_X1)
+   0.05    0.34 v _128118_/ZN (OR2_X1)
+   0.04    0.39 v _128119_/ZN (OR2_X1)
+   0.06    0.45 v _128123_/ZN (OR3_X1)
+   0.06    0.51 v _128124_/ZN (OR3_X1)
+   0.07    0.58 v _128125_/ZN (OR3_X1)
+   0.05    0.63 ^ _128126_/ZN (NOR4_X1)
+   0.02    0.65 v _128128_/ZN (NAND2_X1)
+   0.05    0.70 ^ _128129_/ZN (NOR4_X1)
+   0.02    0.72 v _128130_/ZN (INV_X1)
+   0.06    0.78 ^ _128131_/ZN (NOR4_X2)
+   0.04    0.82 v _128133_/ZN (NAND3_X4)
+   0.04    0.85 v _128134_/ZN (AND2_X4)
+   0.04    0.90 ^ _147073_/ZN (AOI21_X4)
+   0.02    0.92 v _147076_/ZN (NOR2_X4)
+   0.05    0.97 ^ _171566_/ZN (NOR2_X1)
+   0.04    1.01 ^ _171567_/ZN (AND2_X4)
+   0.02    1.03 v _171601_/ZN (NAND3_X1)
+   0.03    1.05 ^ _171607_/ZN (NAND2_X1)
+   0.02    1.07 v _171610_/ZN (AOI21_X4)
+   0.06    1.13 v _171622_/ZN (OR2_X1)
+   0.05    1.18 ^ _171623_/ZN (AOI22_X4)
+   0.03    1.21 v _171624_/ZN (NAND3_X4)
+   0.03    1.24 ^ _171712_/ZN (AOI21_X2)
+   0.05    1.29 ^ _171713_/ZN (AND2_X1)
+   0.04    1.32 ^ _171715_/ZN (OR2_X2)
+   0.04    1.36 ^ _171717_/ZN (AND2_X1)
+   0.03    1.39 ^ _171718_/Z (BUF_X4)
+   0.02    1.41 v _171719_/ZN (INV_X1)
+   0.03    1.44 ^ _171720_/ZN (NAND2_X4)
+   0.01    1.46 v _171721_/ZN (NOR2_X4)
+   0.04    1.50 ^ _171746_/ZN (NOR2_X1)
+   0.03    1.53 v _171750_/ZN (NAND3_X2)
+   0.04    1.56 ^ _171751_/ZN (NOR2_X4)
+   0.06    1.63 ^ _171794_/ZN (AND3_X2)
+   0.05    1.68 ^ _171795_/ZN (AND2_X2)
+   0.01    1.69 v _171796_/ZN (NOR2_X4)
+   0.04    1.73 v _171831_/ZN (AND2_X2)
+   0.10    1.82 ^ _171832_/ZN (NOR4_X1)
+   0.04    1.86 v _171839_/ZN (NAND4_X2)
+   0.06    1.92 ^ _171859_/ZN (NOR3_X4)
+   0.05    1.97 ^ _171861_/ZN (AND2_X4)
+   0.05    2.02 ^ _171890_/ZN (AND2_X2)
+   0.02    2.04 v _171891_/ZN (INV_X1)
+   0.04    2.07 ^ _171893_/ZN (NOR2_X4)
+   0.01    2.09 v _171896_/ZN (NOR3_X4)
+   0.02    2.11 ^ _172119_/ZN (INV_X2)
+   0.01    2.12 v _172122_/ZN (NOR3_X1)
+   0.04    2.16 ^ _172123_/ZN (NOR2_X1)
+   0.05    2.21 ^ _172130_/ZN (XNOR2_X2)
+   0.02    2.23 v _172176_/ZN (NAND2_X1)
+   0.03    2.25 ^ _172178_/ZN (NAND2_X1)
+   0.02    2.27 v _172230_/ZN (NAND2_X1)
+   0.04    2.31 ^ _172235_/ZN (AOI21_X1)
+   0.04    2.35 ^ _172276_/ZN (OR2_X2)
+   0.04    2.39 ^ _172354_/ZN (AND3_X1)
+   0.02    2.41 v _172356_/ZN (NOR2_X1)
+   0.04    2.45 ^ _172357_/ZN (NOR2_X1)
+   0.02    2.47 v _172805_/ZN (NAND3_X1)
+   0.05    2.52 ^ _172806_/ZN (NOR3_X1)
+   0.05    2.57 ^ _172953_/ZN (AND3_X1)
+   0.02    2.59 v _172954_/ZN (NAND3_X1)
+   0.06    2.65 ^ _172955_/ZN (NOR3_X1)
+   0.03    2.68 v _172956_/ZN (NAND3_X2)
+   0.04    2.72 ^ _173174_/ZN (NOR2_X1)
+   0.03    2.75 v _173175_/ZN (NAND3_X2)
+   0.05    2.80 ^ _173210_/ZN (NOR3_X1)
+   0.02    2.82 v _173213_/ZN (OAI21_X2)
+   0.03    2.84 ^ _173215_/ZN (OAI221_X2)
+   0.06    2.90 ^ _173235_/ZN (AND4_X1)
+   0.06    2.96 ^ _173238_/ZN (AND4_X1)
+   0.03    2.99 v _173240_/ZN (OAI211_X2)
+   0.06    3.05 v _173241_/Z (MUX2_X1)
+   0.03    3.07 v _231131_/Z (CLKBUF_X1)
+   0.00    3.07 v _243586_/D (DFFR_X1)
+           3.07   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _243586_/CK (DFFR_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -3.07   data arrival time
+---------------------------------------------------------
+           6.89   slack (MET)
+
+
+
+==========================================================================
+report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: _244470_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _240742_ (recovery check against rising-edge clock core_clock)
+Path Group: **async_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _244470_/CK (DFFR_X1)
+   0.10    0.10 ^ _244470_/Q (DFFR_X1)
+   0.02    0.12 ^ buffer2584/Z (BUF_X1)
+   0.03    0.14 ^ _224640_/Z (CLKBUF_X1)
+   0.03    0.18 ^ buffer2583/Z (BUF_X1)
+   0.02    0.20 v _218464_/ZN (OAI21_X2)
+   0.03    0.23 ^ _218465_/ZN (INV_X4)
+   0.02    0.25 ^ _240588_/Z (BUF_X32)
+   0.03    0.28 ^ buffer2588/Z (BUF_X1)
+   0.02    0.30 ^ buffer2581/Z (BUF_X1)
+   0.65    0.94 ^ buffer2587/Z (BUF_X1)
+   0.00    0.94 ^ _240742_/RN (DFFR_X1)
+           0.94   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _240742_/CK (DFFR_X1)
+  -0.08    9.92   library recovery time
+           9.92   data required time
+---------------------------------------------------------
+           9.92   data required time
+          -0.94   data arrival time
+---------------------------------------------------------
+           8.97   slack (MET)
+
+
+Startpoint: _247328_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _243586_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _247328_/CK (DFFR_X1)
+   0.08    0.08 v _247328_/Q (DFFR_X1)
+   0.03    0.12 v _220905_/Z (CLKBUF_X2)
+   0.08    0.19 v _128116_/ZN (OR3_X1)
+   0.10    0.29 v _128117_/ZN (OR4_X1)
+   0.05    0.34 v _128118_/ZN (OR2_X1)
+   0.04    0.39 v _128119_/ZN (OR2_X1)
+   0.06    0.45 v _128123_/ZN (OR3_X1)
+   0.06    0.51 v _128124_/ZN (OR3_X1)
+   0.07    0.58 v _128125_/ZN (OR3_X1)
+   0.05    0.63 ^ _128126_/ZN (NOR4_X1)
+   0.02    0.65 v _128128_/ZN (NAND2_X1)
+   0.05    0.70 ^ _128129_/ZN (NOR4_X1)
+   0.02    0.72 v _128130_/ZN (INV_X1)
+   0.06    0.78 ^ _128131_/ZN (NOR4_X2)
+   0.04    0.82 v _128133_/ZN (NAND3_X4)
+   0.04    0.85 v _128134_/ZN (AND2_X4)
+   0.04    0.90 ^ _147073_/ZN (AOI21_X4)
+   0.02    0.92 v _147076_/ZN (NOR2_X4)
+   0.05    0.97 ^ _171566_/ZN (NOR2_X1)
+   0.04    1.01 ^ _171567_/ZN (AND2_X4)
+   0.02    1.03 v _171601_/ZN (NAND3_X1)
+   0.03    1.05 ^ _171607_/ZN (NAND2_X1)
+   0.02    1.07 v _171610_/ZN (AOI21_X4)
+   0.06    1.13 v _171622_/ZN (OR2_X1)
+   0.05    1.18 ^ _171623_/ZN (AOI22_X4)
+   0.03    1.21 v _171624_/ZN (NAND3_X4)
+   0.03    1.24 ^ _171712_/ZN (AOI21_X2)
+   0.05    1.29 ^ _171713_/ZN (AND2_X1)
+   0.04    1.32 ^ _171715_/ZN (OR2_X2)
+   0.04    1.36 ^ _171717_/ZN (AND2_X1)
+   0.03    1.39 ^ _171718_/Z (BUF_X4)
+   0.02    1.41 v _171719_/ZN (INV_X1)
+   0.03    1.44 ^ _171720_/ZN (NAND2_X4)
+   0.01    1.46 v _171721_/ZN (NOR2_X4)
+   0.04    1.50 ^ _171746_/ZN (NOR2_X1)
+   0.03    1.53 v _171750_/ZN (NAND3_X2)
+   0.04    1.56 ^ _171751_/ZN (NOR2_X4)
+   0.06    1.63 ^ _171794_/ZN (AND3_X2)
+   0.05    1.68 ^ _171795_/ZN (AND2_X2)
+   0.01    1.69 v _171796_/ZN (NOR2_X4)
+   0.04    1.73 v _171831_/ZN (AND2_X2)
+   0.10    1.82 ^ _171832_/ZN (NOR4_X1)
+   0.04    1.86 v _171839_/ZN (NAND4_X2)
+   0.06    1.92 ^ _171859_/ZN (NOR3_X4)
+   0.05    1.97 ^ _171861_/ZN (AND2_X4)
+   0.05    2.02 ^ _171890_/ZN (AND2_X2)
+   0.02    2.04 v _171891_/ZN (INV_X1)
+   0.04    2.07 ^ _171893_/ZN (NOR2_X4)
+   0.01    2.09 v _171896_/ZN (NOR3_X4)
+   0.02    2.11 ^ _172119_/ZN (INV_X2)
+   0.01    2.12 v _172122_/ZN (NOR3_X1)
+   0.04    2.16 ^ _172123_/ZN (NOR2_X1)
+   0.05    2.21 ^ _172130_/ZN (XNOR2_X2)
+   0.02    2.23 v _172176_/ZN (NAND2_X1)
+   0.03    2.25 ^ _172178_/ZN (NAND2_X1)
+   0.02    2.27 v _172230_/ZN (NAND2_X1)
+   0.04    2.31 ^ _172235_/ZN (AOI21_X1)
+   0.04    2.35 ^ _172276_/ZN (OR2_X2)
+   0.04    2.39 ^ _172354_/ZN (AND3_X1)
+   0.02    2.41 v _172356_/ZN (NOR2_X1)
+   0.04    2.45 ^ _172357_/ZN (NOR2_X1)
+   0.02    2.47 v _172805_/ZN (NAND3_X1)
+   0.05    2.52 ^ _172806_/ZN (NOR3_X1)
+   0.05    2.57 ^ _172953_/ZN (AND3_X1)
+   0.02    2.59 v _172954_/ZN (NAND3_X1)
+   0.06    2.65 ^ _172955_/ZN (NOR3_X1)
+   0.03    2.68 v _172956_/ZN (NAND3_X2)
+   0.04    2.72 ^ _173174_/ZN (NOR2_X1)
+   0.03    2.75 v _173175_/ZN (NAND3_X2)
+   0.05    2.80 ^ _173210_/ZN (NOR3_X1)
+   0.02    2.82 v _173213_/ZN (OAI21_X2)
+   0.03    2.84 ^ _173215_/ZN (OAI221_X2)
+   0.06    2.90 ^ _173235_/ZN (AND4_X1)
+   0.06    2.96 ^ _173238_/ZN (AND4_X1)
+   0.03    2.99 v _173240_/ZN (OAI211_X2)
+   0.06    3.05 v _173241_/Z (MUX2_X1)
+   0.03    3.07 v _231131_/Z (CLKBUF_X1)
+   0.00    3.07 v _243586_/D (DFFR_X1)
+           3.07   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _243586_/CK (DFFR_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -3.07   data arrival time
+---------------------------------------------------------
+           6.89   slack (MET)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+report_check_types -max_transition -all_violators
+--------------------------------------------------------------------------
+max_transition
+
+Pin                                    Limit   Trans   Slack
+------------------------------------------------------------
+_240742_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240743_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240744_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240745_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240746_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240747_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240748_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240749_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240750_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240751_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240752_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240753_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240754_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240755_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240756_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240758_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240759_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240760_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240761_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240762_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240763_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240765_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240766_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240767_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240768_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240769_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240770_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240771_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240772_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240773_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240774_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240775_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240776_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240777_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240778_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240779_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240780_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240781_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240784_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240785_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240786_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240787_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240788_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240790_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240791_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240792_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240793_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240794_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240795_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240796_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240797_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240798_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240799_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240800_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240801_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240802_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240803_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240804_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240805_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240806_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240807_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240808_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240809_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240810_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240811_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240812_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240813_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240814_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240815_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240816_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240817_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240818_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240819_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240820_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240821_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240822_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240823_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240824_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240825_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240826_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240827_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240828_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240829_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240830_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240831_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240832_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240833_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240834_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240835_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240836_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240837_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240838_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240839_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240840_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240841_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240842_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240843_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_240844_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242123_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242124_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242125_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242126_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242127_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242128_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242129_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242131_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242132_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242133_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242134_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242135_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242136_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242137_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242138_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242139_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242140_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242141_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242142_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242143_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242144_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242145_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242146_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242147_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242148_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242149_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242150_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242151_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242152_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242153_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242154_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242456_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242457_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242458_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242459_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242460_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242461_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242462_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242463_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242464_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242465_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242466_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242467_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242468_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242469_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242470_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242471_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242472_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242473_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242474_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242475_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242476_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242477_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242478_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242479_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242480_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242481_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242482_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242483_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242484_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242485_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242486_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_242487_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244418_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244419_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244420_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244421_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244422_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244423_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244424_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244425_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244426_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244427_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244428_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244429_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244430_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244431_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244432_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244433_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244434_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244435_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244436_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244437_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244438_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244439_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244440_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244441_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244442_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244443_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244444_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244445_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244446_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244447_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244448_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244449_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244450_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244451_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244452_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244453_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244454_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244455_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244456_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244457_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244458_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244459_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244460_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244461_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244462_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244463_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244464_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244465_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244466_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244467_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244468_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244469_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244471_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244472_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244473_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244474_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244475_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244476_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244477_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244480_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244481_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244486_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244487_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244488_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244490_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244491_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244492_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244493_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244494_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244495_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244496_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244497_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244498_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244499_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244500_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244501_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244506_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244507_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244508_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244509_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244511_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244512_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244513_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244514_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244515_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244517_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244519_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244521_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244522_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244523_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244525_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244526_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244527_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244528_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244529_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244530_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244531_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244532_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244533_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244534_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244535_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244536_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244537_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244538_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244539_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244540_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244541_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244542_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244543_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244545_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244547_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244551_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244553_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244554_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244555_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244557_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244558_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244559_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244560_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244561_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244562_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244563_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244564_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244565_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244566_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244567_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244568_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244569_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244570_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244571_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244572_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244573_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244574_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244575_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244576_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244579_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244580_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244581_/RN                             0.20    0.60   -0.40 (VIOLATED)
+_244582_/RN                             0.20    0.60   -0.40 (VIOLATED)
+buffer2585/Z                            0.20    0.60   -0.40 (VIOLATED)
+buffer2586/Z                            0.20    0.60   -0.40 (VIOLATED)
+buffer2587/Z                            0.20    0.60   -0.40 (VIOLATED)
+
+
+==========================================================================
+report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             1.12e-13   1.23e-14   7.49e-04   7.49e-04   7.2%
+Combinational          2.63e-03   2.52e-03   4.43e-03   9.58e-03  92.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.63e-03   2.52e-03   5.18e-03   1.03e-02 100.0%
+                          25.4%      24.4%      50.1%
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 8088562 u^2 100% utilization.

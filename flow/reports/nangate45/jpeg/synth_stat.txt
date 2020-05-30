@@ -1,0 +1,84 @@
+
+29. Printing statistics.
+
+=== jpeg_encoder ===
+
+   Number of wires:              92001
+   Number of wire bits:          92037
+   Number of public wires:        4775
+   Number of public wire bits:    4811
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              87227
+     AND2_X1                      9017
+     AND2_X2                       695
+     AND2_X4                       257
+     AND3_X1                      1106
+     AND3_X2                        84
+     AND3_X4                         4
+     AND4_X1                        65
+     AOI211_X2                       1
+     AOI211_X4                      68
+     AOI21_X1                     2582
+     AOI21_X2                       14
+     AOI21_X4                        5
+     AOI221_X1                       1
+     AOI221_X4                      86
+     AOI22_X1                      367
+     AOI22_X4                        3
+     BUF_X1                       9752
+     BUF_X16                        66
+     BUF_X2                        621
+     BUF_X32                        57
+     BUF_X4                       1032
+     BUF_X8                        120
+     CLKBUF_X2                     288
+     CLKBUF_X3                      53
+     DFFR_X1                        63
+     DFFS_X1                         2
+     DFF_X1                       4725
+     INV_X1                       4161
+     INV_X2                         60
+     INV_X32                         2
+     INV_X4                          4
+     INV_X8                          1
+     LOGIC0_X1                       1
+     MUX2_X1                      5684
+     MUX2_X2                         1
+     NAND2_X1                    15153
+     NAND2_X2                       98
+     NAND2_X4                       20
+     NAND3_X1                     1771
+     NAND3_X2                        3
+     NAND3_X4                        3
+     NAND4_X1                      194
+     NOR2_X1                      3729
+     NOR2_X2                        39
+     NOR2_X4                        15
+     NOR3_X1                       734
+     NOR3_X2                        36
+     NOR3_X4                         6
+     NOR4_X1                        33
+     NOR4_X4                         1
+     OAI211_X2                      92
+     OAI21_X1                     2447
+     OAI21_X2                       10
+     OAI21_X4                        5
+     OAI221_X1                      10
+     OAI22_X1                      212
+     OR2_X1                        947
+     OR2_X2                         35
+     OR2_X4                          5
+     OR3_X1                        467
+     OR3_X2                          4
+     OR3_X4                         11
+     OR4_X1                         26
+     OR4_X2                          3
+     XNOR2_X1                     8257
+     XNOR2_X2                      362
+     XOR2_X1                     10542
+     XOR2_X2                       909
+
+   Chip area for module '\jpeg_encoder': 120054.578000
+

@@ -1,0 +1,78 @@
+
+18. Printing statistics.
+
+=== bp_fe_top ===
+
+   Number of wires:              48850
+   Number of wire bits:          51331
+   Number of public wires:        5659
+   Number of public wire bits:    8140
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              45088
+     AND2_X1                      1491
+     AND2_X2                       350
+     AND2_X4                         2
+     AND3_X1                      1091
+     AND3_X2                        14
+     AND3_X4                         9
+     AND4_X1                       599
+     AOI211_X4                     641
+     AOI21_X1                     1050
+     AOI21_X2                       15
+     AOI221_X4                     166
+     AOI22_X1                      323
+     BUF_X1                      13301
+     BUF_X16                         7
+     BUF_X2                        342
+     BUF_X32                         7
+     BUF_X4                       2155
+     BUF_X8                        255
+     CLKBUF_X1                      64
+     CLKBUF_X2                     424
+     CLKBUF_X3                      18
+     DFF_X1                       4339
+     INV_X1                       1595
+     INV_X16                         2
+     INV_X2                         15
+     INV_X32                         9
+     INV_X4                          6
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                      4460
+     NAND2_X1                     1102
+     NAND2_X2                        9
+     NAND2_X4                        1
+     NAND3_X1                     1315
+     NAND3_X2                       12
+     NAND3_X4                        9
+     NAND4_X1                     1511
+     NAND4_X2                        1
+     NOR2_X1                       841
+     NOR2_X2                        26
+     NOR2_X4                         5
+     NOR3_X1                       448
+     NOR3_X2                         2
+     NOR3_X4                        10
+     NOR4_X1                       124
+     OAI211_X2                    1394
+     OAI21_X1                     1634
+     OAI21_X2                        6
+     OAI221_X1                     440
+     OAI22_X1                     1414
+     OR2_X1                       1077
+     OR2_X2                          8
+     OR2_X4                          1
+     OR3_X1                        200
+     OR3_X2                          2
+     OR3_X4                          3
+     OR4_X1                        485
+     XNOR2_X1                      214
+     XOR2_X1                        31
+     fakeram45_512x64                9
+     fakeram45_64x7                  1
+     fakeram45_64x96                 1
+
+   Chip area for module '\bp_fe_top': 195887.720000
+

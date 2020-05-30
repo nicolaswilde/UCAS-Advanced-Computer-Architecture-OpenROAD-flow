@@ -1,0 +1,96 @@
+
+55. Printing statistics.
+
+=== riscv_core ===
+
+   Number of wires:             115874
+   Number of wire bits:         116146
+   Number of public wires:        6808
+   Number of public wire bits:    7080
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             109418
+     AND2_X1                      4286
+     AND2_X2                       659
+     AND2_X4                        83
+     AND3_X1                      2571
+     AND3_X2                        85
+     AND3_X4                         8
+     AND4_X1                      2314
+     AND4_X2                        32
+     AND4_X4                         2
+     AOI211_X2                      38
+     AOI211_X4                     741
+     AOI21_X1                     7563
+     AOI21_X2                       50
+     AOI21_X4                       13
+     AOI221_X1                      11
+     AOI221_X2                       2
+     AOI221_X4                     266
+     AOI22_X1                      891
+     AOI22_X2                        3
+     AOI22_X4                        3
+     BUF_X1                      13818
+     BUF_X16                        76
+     BUF_X2                       1280
+     BUF_X32                        22
+     BUF_X4                       6685
+     BUF_X8                        607
+     CLKBUF_X2                    1138
+     CLKBUF_X3                      36
+     DFFR_X1                      4520
+     DFFS_X1                      1036
+     DFF_X1                        992
+     INV_X1                       6241
+     INV_X16                         1
+     INV_X2                        171
+     INV_X32                         1
+     INV_X4                         26
+     INV_X8                          4
+     LOGIC0_X1                       1
+     MUX2_X1                      2443
+     MUX2_X2                         7
+     NAND2_X1                     7075
+     NAND2_X2                      116
+     NAND2_X4                       38
+     NAND3_X1                     4803
+     NAND3_X2                       48
+     NAND3_X4                       24
+     NAND4_X1                    10726
+     NAND4_X2                       24
+     NAND4_X4                       17
+     NOR2_X1                      4644
+     NOR2_X2                        85
+     NOR2_X4                        35
+     NOR3_X1                      1945
+     NOR3_X2                        14
+     NOR3_X4                        12
+     NOR4_X1                      1715
+     NOR4_X2                        15
+     NOR4_X4                         7
+     OAI211_X2                    4682
+     OAI211_X4                       3
+     OAI21_X1                     6691
+     OAI21_X2                       40
+     OAI21_X4                       10
+     OAI221_X1                     396
+     OAI221_X2                       1
+     OAI22_X1                      691
+     OAI22_X2                        1
+     OR2_X1                        797
+     OR2_X2                         39
+     OR2_X4                         11
+     OR3_X1                        484
+     OR3_X2                         56
+     OR3_X4                          8
+     OR4_X1                        655
+     OR4_X2                          3
+     OR4_X4                          1
+     XNOR2_X1                     2659
+     XNOR2_X2                       58
+     XOR2_X1                      1937
+     XOR2_X2                       126
+
+   Chip area for module '\riscv_core': 161183.764000
+

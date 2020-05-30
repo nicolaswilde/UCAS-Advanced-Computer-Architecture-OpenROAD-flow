@@ -1,0 +1,218 @@
+
+==========================================================================
+report_floating_nets
+--------------------------------------------------------------------------
+Warning: found 2001 floatiing nets.
+
+==========================================================================
+report_checks
+--------------------------------------------------------------------------
+Startpoint: _58501_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _58502_ (recovery check against rising-edge clock clk)
+Path Group: **async_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _58501_/CK (DFFR_X1)
+   0.10    0.10 ^ _58501_/Q (DFFR_X1)
+   0.03    0.13 ^ _52774_/Z (CLKBUF_X1)
+   0.03    0.16 ^ _51054_/Z (MUX2_X2)
+   0.08    0.24 ^ buffer1417/Z (BUF_X1)
+   0.03    0.27 ^ _52777_/Z (BUF_X32)
+   0.04    0.31 ^ buffer1416/Z (BUF_X1)
+   0.03    0.33 ^ buffer1408/Z (BUF_X1)
+   0.65    0.98 ^ buffer1414/Z (BUF_X1)
+   0.00    0.98 ^ _58502_/RN (DFFR_X1)
+           0.98   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _58502_/CK (DFFR_X1)
+  -0.08    9.92   library recovery time
+           9.92   data required time
+---------------------------------------------------------
+           9.92   data required time
+          -0.98   data arrival time
+---------------------------------------------------------
+           8.94   slack (MET)
+
+
+Startpoint: _59187_ (positive level-sensitive latch clocked by clk')
+Endpoint: _51068_ (rising clock gating-check end-point clocked by clk)
+Path Group: **clock_gating_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   5.00    5.00   clock clk' (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00 ^ _59187_/G (DLH_X1)
+   0.05    5.05 v _59187_/Q (DLH_X1)
+   0.03    5.08 v _52790_/Z (CLKBUF_X1)
+   0.00    5.08 v _51068_/A2 (AND2_X1)
+           5.08   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _51068_/A1 (AND2_X1)
+   0.00   10.00   clock gating setup time
+          10.00   data required time
+---------------------------------------------------------
+          10.00   data required time
+          -5.08   data arrival time
+---------------------------------------------------------
+           4.92   slack (MET)
+
+
+Startpoint: _58524_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _59185_ (positive level-sensitive latch clocked by clk')
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _58524_/CK (DFFR_X1)
+   0.10    0.10 ^ _58524_/Q (DFFR_X1)
+   0.04    0.14 ^ _53392_/Z (BUF_X2)
+   0.06    0.21 ^ _29322_/ZN (AND2_X1)
+   0.06    0.27 ^ _29324_/ZN (AND2_X2)
+   0.05    0.31 ^ _29371_/ZN (AND2_X1)
+   0.05    0.36 ^ _29466_/Z (BUF_X2)
+   0.04    0.40 ^ _29468_/ZN (AND2_X1)
+   0.04    0.44 ^ _29469_/Z (BUF_X4)
+   0.04    0.48 v _29470_/ZN (INV_X4)
+   0.04    0.52 v _29471_/ZN (AND3_X4)
+   0.03    0.55 v _29509_/ZN (AND2_X1)
+   0.04    0.59 v _29510_/ZN (AND2_X2)
+   0.07    0.66 ^ _29531_/ZN (NOR3_X4)
+   0.09    0.75 ^ _29533_/ZN (AND2_X2)
+   0.05    0.80 ^ _29680_/ZN (AND2_X4)
+   0.03    0.83 v _29798_/ZN (NAND3_X4)
+   0.04    0.87 v _29806_/ZN (AND2_X1)
+   0.11    0.97 ^ _29809_/ZN (AOI211_X2)
+   0.03    1.00 v _30191_/ZN (NOR2_X2)
+   0.04    1.04 ^ _30192_/ZN (AOI21_X2)
+   0.05    1.08 v _30202_/ZN (NAND4_X4)
+   0.08    1.16 ^ _30238_/ZN (NOR2_X1)
+   0.05    1.21 ^ _30521_/ZN (AND2_X1)
+   0.03    1.24 ^ _30522_/Z (BUF_X4)
+   0.01    1.25 v _30523_/ZN (INV_X1)
+   0.03    1.28 v _31057_/ZN (AND2_X1)
+   0.05    1.34 v _31082_/Z (XOR2_X2)
+   0.01    1.35 ^ _31083_/ZN (NAND2_X1)
+   0.04    1.39 ^ _31085_/ZN (AND2_X1)
+   0.01    1.41 v _31086_/ZN (INV_X1)
+   0.04    1.45 ^ _31088_/ZN (AOI21_X2)
+   0.03    1.48 v _31090_/ZN (OAI21_X1)
+   0.03    1.51 ^ _31187_/ZN (NAND2_X1)
+   0.02    1.52 v _31189_/ZN (AOI211_X2)
+   0.05    1.58 ^ _31193_/ZN (NOR3_X2)
+   0.02    1.60 v _31458_/ZN (NOR2_X1)
+   0.03    1.63 ^ _31678_/ZN (OAI22_X2)
+   0.03    1.66 v _31680_/ZN (NAND2_X2)
+   0.02    1.68 ^ _32680_/ZN (NAND3_X1)
+   0.05    1.73 ^ _32704_/ZN (AND2_X1)
+   0.02    1.75 v _32705_/ZN (INV_X1)
+   0.04    1.78 v _34531_/ZN (AND3_X1)
+   0.06    1.85 ^ _34581_/ZN (NOR3_X2)
+   0.13    1.97 ^ _34642_/Z (XOR2_X2)
+   0.06    2.03 ^ _34643_/ZN (OR2_X1)
+   0.02    2.05 v _35026_/ZN (AOI21_X1)
+   0.13    2.18 ^ _35028_/ZN (AOI211_X2)
+   0.07    2.25 ^ _35030_/ZN (AND2_X4)
+   0.02    2.27 v _35031_/ZN (INV_X4)
+   0.06    2.33 ^ _35033_/ZN (OAI221_X2)
+   0.06    2.39 ^ _35036_/ZN (AND2_X1)
+   0.05    2.44 ^ _35037_/Z (BUF_X2)
+   0.02    2.46 v _35038_/ZN (NOR2_X2)
+   0.05    2.51 v _35040_/ZN (OR2_X4)
+   0.09    2.60 v _35090_/ZN (OR3_X2)
+   0.04    2.64 v _35091_/Z (BUF_X8)
+   0.04    2.68 v _37179_/ZN (AND2_X1)
+   0.04    2.72 ^ _37180_/ZN (AOI21_X2)
+   0.02    2.73 v _37181_/ZN (NOR3_X4)
+   0.04    2.78 ^ _37182_/ZN (NOR2_X4)
+   0.02    2.79 v _37185_/ZN (NOR2_X2)
+   0.04    2.83 ^ _37186_/ZN (NOR2_X2)
+   0.04    2.88 ^ _37189_/ZN (AND2_X1)
+   0.04    2.91 ^ _37190_/Z (BUF_X4)
+   0.02    2.94 v _37191_/ZN (NOR2_X2)
+   0.04    2.97 v _38421_/ZN (AND3_X1)
+   0.06    3.03 ^ _38434_/ZN (AOI21_X1)
+   0.06    3.09 ^ _38435_/ZN (AND2_X1)
+   0.03    3.12 v _38436_/ZN (NAND4_X1)
+   0.11    3.24 v _38507_/ZN (OR4_X1)
+   0.07    3.30 ^ _38726_/ZN (NOR4_X1)
+   0.02    3.32 v _38742_/ZN (NOR2_X1)
+   0.04    3.37 v _38751_/ZN (AND2_X1)
+   0.06    3.42 ^ _38759_/ZN (NOR2_X1)
+   0.05    3.47 ^ _38760_/Z (BUF_X2)
+   0.03    3.50 ^ _38798_/ZN (OR2_X1)
+   0.02    3.52 v _38800_/ZN (NAND2_X1)
+   0.07    3.60 ^ _38809_/ZN (NOR4_X1)
+   0.06    3.66 ^ _38833_/ZN (AND2_X1)
+   0.03    3.68 v _38878_/ZN (NAND2_X2)
+   0.03    3.72 ^ _38887_/ZN (OAI21_X2)
+   0.06    3.78 ^ _38900_/ZN (AND2_X1)
+   0.02    3.80 v _38901_/ZN (INV_X1)
+   0.06    3.86 ^ _38955_/ZN (NOR4_X2)
+   0.02    3.88 v _38957_/ZN (NOR2_X2)
+   0.02    3.90 ^ _38958_/ZN (INV_X1)
+   0.02    3.93 v _38959_/ZN (AOI21_X1)
+   0.05    3.97 ^ _38964_/ZN (NOR2_X2)
+   0.07    4.04 ^ _38967_/ZN (AND3_X2)
+   0.02    4.06 v _38972_/ZN (NOR2_X4)
+   0.03    4.09 ^ _38973_/ZN (INV_X1)
+   0.05    4.14 ^ _38974_/Z (BUF_X2)
+   0.02    4.15 v _51059_/ZN (AOI21_X1)
+   0.02    4.17 ^ _51061_/ZN (NAND3_X1)
+   0.01    4.19 v _51062_/ZN (NOR3_X1)
+   0.01    4.20 ^ _51079_/ZN (NAND2_X1)
+   0.03    4.23 ^ _52801_/Z (CLKBUF_X1)
+   0.00    4.23 ^ _59185_/D (DLH_X1)
+           4.23   data arrival time
+
+   5.00    5.00   clock clk' (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00   clock reconvergence pessimism
+           5.00 ^ _59185_/G (DLH_X1)
+   0.00    5.00   time borrowed from endpoint
+           5.00   data required time
+---------------------------------------------------------
+           5.00   data required time
+          -4.23   data arrival time
+---------------------------------------------------------
+           0.77   slack (MET)
+
+Time Borrowing Information
+--------------------------------------------
+clk' pulse width                        5.00
+library setup time                     -0.02
+--------------------------------------------
+max time borrow                         4.98
+actual time borrow                      0.00
+--------------------------------------------
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 200367 u^2 28% utilization.

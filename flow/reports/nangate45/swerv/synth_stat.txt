@@ -1,0 +1,95 @@
+
+17. Printing statistics.
+
+=== swerv ===
+
+   Number of wires:             141394
+   Number of wire bits:         143214
+   Number of public wires:       20080
+   Number of public wire bits:   21900
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             130858
+     AND2_X1                      6405
+     AND2_X2                       668
+     AND2_X4                        26
+     AND3_X1                      4047
+     AND3_X2                       138
+     AND3_X4                        10
+     AND4_X1                      2412
+     AND4_X2                        73
+     AND4_X4                         2
+     AOI211_X2                      17
+     AOI211_X4                     547
+     AOI21_X1                     4270
+     AOI21_X2                       25
+     AOI21_X4                        5
+     AOI221_X1                       4
+     AOI221_X2                       5
+     AOI221_X4                    1687
+     AOI22_X1                     2567
+     AOI22_X2                        5
+     BUF_X1                      22122
+     BUF_X16                         3
+     BUF_X2                       1811
+     BUF_X4                       6268
+     BUF_X8                        308
+     CLKBUF_X1                      27
+     CLKBUF_X2                     658
+     CLKBUF_X3                      19
+     DFFR_X1                     11581
+     DFFS_X1                         1
+     DFF_X1                          1
+     INV_X1                       7115
+     INV_X2                        274
+     INV_X32                         2
+     INV_X4                         13
+     INV_X8                          3
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                      3778
+     MUX2_X2                        26
+     NAND2_X1                     7918
+     NAND2_X2                       62
+     NAND2_X4                        8
+     NAND3_X1                    10488
+     NAND3_X2                        7
+     NAND3_X4                        1
+     NAND4_X1                     8217
+     NAND4_X2                        3
+     NAND4_X4                        1
+     NOR2_X1                      4506
+     NOR2_X2                       167
+     NOR2_X4                        16
+     NOR3_X1                      1580
+     NOR3_X2                        20
+     NOR3_X4                        12
+     NOR4_X1                      1020
+     NOR4_X2                         6
+     NOR4_X4                         2
+     OAI211_X2                    3333
+     OAI211_X4                       2
+     OAI21_X1                     5081
+     OAI21_X2                       14
+     OAI21_X4                        4
+     OAI221_X1                    2317
+     OAI221_X2                       1
+     OAI22_X1                      668
+     OAI22_X2                        1
+     OR2_X1                        837
+     OR2_X2                         74
+     OR2_X4                          7
+     OR3_X1                       1158
+     OR3_X2                          6
+     OR3_X4                          8
+     OR4_X1                        336
+     OR4_X2                          7
+     OR4_X4                          1
+     XNOR2_X1                     3983
+     XNOR2_X2                       10
+     XOR2_X1                      2049
+     XOR2_X2                         2
+
+   Chip area for module '\swerv': 205119.250000
+

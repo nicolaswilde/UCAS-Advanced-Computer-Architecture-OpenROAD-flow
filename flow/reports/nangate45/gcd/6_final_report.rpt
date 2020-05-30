@@ -1,0 +1,166 @@
+
+==========================================================================
+report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: _811_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _811_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _811_/CK (DFF_X1)
+   0.08    0.08 v _811_/Q (DFF_X1)
+   0.03    0.11 v _801_/Z (CLKBUF_X1)
+   0.02    0.13 ^ _681_/ZN (NAND2_X1)
+   0.01    0.14 v _682_/ZN (NAND2_X1)
+   0.03    0.17 v _805_/Z (CLKBUF_X1)
+   0.00    0.17 v _811_/D (DFF_X1)
+           0.17   data arrival time
+
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _811_/CK (DFF_X1)
+   0.00    0.00   library hold time
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -0.17   data arrival time
+---------------------------------------------------------
+           0.16   slack (MET)
+
+
+
+==========================================================================
+report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: _830_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _828_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _830_/CK (DFF_X1)
+   0.08    0.08 ^ _830_/Q (DFF_X1)
+   0.04    0.13 ^ _690_/Z (BUF_X1)
+   0.05    0.17 ^ _423_/ZN (XNOR2_X1)
+   0.03    0.20 v _425_/ZN (OAI21_X1)
+   0.03    0.23 ^ _427_/ZN (OAI21_X1)
+   0.02    0.25 v _430_/ZN (NAND3_X1)
+   0.04    0.29 v _436_/ZN (AND2_X1)
+   0.02    0.31 ^ _437_/ZN (INV_X1)
+   0.02    0.34 v _444_/ZN (NAND3_X2)
+   0.02    0.36 ^ _455_/ZN (NAND2_X2)
+   0.02    0.38 v _598_/ZN (AOI21_X2)
+   0.05    0.43 ^ _612_/ZN (NOR3_X1)
+   0.02    0.45 v _621_/ZN (OAI21_X1)
+   0.03    0.48 v _623_/ZN (AND2_X1)
+   0.04    0.52 v _624_/ZN (XNOR2_X1)
+   0.03    0.55 v _625_/ZN (AND2_X1)
+   0.04    0.59 ^ _628_/ZN (OAI21_X1)
+   0.03    0.61 v _630_/ZN (OAI211_X2)
+   0.03    0.64 v _750_/Z (CLKBUF_X1)
+   0.00    0.64 v _828_/D (DFF_X1)
+           0.64   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _828_/CK (DFF_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -0.64   data arrival time
+---------------------------------------------------------
+           9.32   slack (MET)
+
+
+
+==========================================================================
+report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: _830_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _828_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _830_/CK (DFF_X1)
+   0.08    0.08 ^ _830_/Q (DFF_X1)
+   0.04    0.13 ^ _690_/Z (BUF_X1)
+   0.05    0.17 ^ _423_/ZN (XNOR2_X1)
+   0.03    0.20 v _425_/ZN (OAI21_X1)
+   0.03    0.23 ^ _427_/ZN (OAI21_X1)
+   0.02    0.25 v _430_/ZN (NAND3_X1)
+   0.04    0.29 v _436_/ZN (AND2_X1)
+   0.02    0.31 ^ _437_/ZN (INV_X1)
+   0.02    0.34 v _444_/ZN (NAND3_X2)
+   0.02    0.36 ^ _455_/ZN (NAND2_X2)
+   0.02    0.38 v _598_/ZN (AOI21_X2)
+   0.05    0.43 ^ _612_/ZN (NOR3_X1)
+   0.02    0.45 v _621_/ZN (OAI21_X1)
+   0.03    0.48 v _623_/ZN (AND2_X1)
+   0.04    0.52 v _624_/ZN (XNOR2_X1)
+   0.03    0.55 v _625_/ZN (AND2_X1)
+   0.04    0.59 ^ _628_/ZN (OAI21_X1)
+   0.03    0.61 v _630_/ZN (OAI211_X2)
+   0.03    0.64 v _750_/Z (CLKBUF_X1)
+   0.00    0.64 v _828_/D (DFF_X1)
+           0.64   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _828_/CK (DFF_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -0.64   data arrival time
+---------------------------------------------------------
+           9.32   slack (MET)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+report_check_types -max_transition -all_violators
+--------------------------------------------------------------------------
+
+==========================================================================
+report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   2.77e-06   2.77e-06   9.6%
+Combinational          8.35e-06   7.02e-06   1.08e-05   2.61e-05  90.4%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  8.35e-06   7.02e-06   1.35e-05   2.89e-05 100.0%
+                          28.9%      24.3%      46.8%
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 25593 u^2 100% utilization.

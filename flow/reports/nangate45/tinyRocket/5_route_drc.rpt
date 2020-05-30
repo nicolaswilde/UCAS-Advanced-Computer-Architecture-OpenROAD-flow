@@ -1,0 +1,57 @@
+  violation type: Short
+    srcs: frontend.icache._T_104\[2\] frontend.icache._T_104\[5\] 
+    bbox = ( 40.94, 757.715 ) - ( 41.01, 757.715 ) on Layer metal3
+  violation type: Short
+    srcs: frontend.icache._T_104\[2\] frontend.icache._T_104\[5\] 
+    bbox = ( 40.94, 757.715 ) - ( 41.015, 757.715 ) on Layer metal3
+  violation type: CutSpc
+    srcs: clknet_9_152_0_clock 
+    bbox = ( 60.29, 535.465 ) - ( 60.36, 535.535 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _29611_ 
+    bbox = ( 88.41, 697.165 ) - ( 88.48, 697.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _29611_ 
+    bbox = ( 87.65, 697.165 ) - ( 87.72, 697.235 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_419_0_clock 
+    bbox = ( 234.52, 741.265 ) - ( 234.59, 741.335 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _22132_ 
+    bbox = ( 263.21, 667.765 ) - ( 263.28, 667.835 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _22132_ 
+    bbox = ( 264.92, 667.765 ) - ( 264.99, 667.835 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _22181_ 
+    bbox = ( 264.54, 770.665 ) - ( 264.61, 770.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _22181_ 
+    bbox = ( 268.15, 770.665 ) - ( 268.22, 770.735 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _06639_ 
+    bbox = ( 296.08, 344.365 ) - ( 296.15, 344.435 ) on Layer metal2
+  violation type: OffGrid
+    srcs: _25354_ 
+    bbox = ( 300.233, 716.975 ) - ( 300.373, 717.045 ) on Layer metal1
+  violation type: MetSpc
+    srcs: VSS _25354_ 
+    bbox = ( 300.373, 716.975 ) - ( 300.425, 717.045 ) on Layer metal1
+  violation type: OffGrid
+    srcs: _25354_ 
+    bbox = ( 300.267, 716.975 ) - ( 300.52, 717.045 ) on Layer metal2
+  violation type: OffGrid
+    srcs: _25354_ 
+    bbox = ( 300.267, 716.94 ) - ( 300.337, 717.08 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_278_0_clock 
+    bbox = ( 352.89, 432.565 ) - ( 352.96, 432.635 ) on Layer metal2
+  violation type: CutSpc
+    srcs: clknet_9_278_0_clock 
+    bbox = ( 352.86, 432.565 ) - ( 352.93, 432.635 ) on Layer metal3
+  violation type: CutSpc
+    srcs: _18509_ 
+    bbox = ( 382.91, 432.565 ) - ( 382.98, 432.635 ) on Layer metal2
+  violation type: CutSpc
+    srcs: _29594_ 
+    bbox = ( 413.12, 594.265 ) - ( 413.19, 594.335 ) on Layer metal2

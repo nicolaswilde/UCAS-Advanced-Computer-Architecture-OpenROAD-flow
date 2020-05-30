@@ -1,0 +1,89 @@
+
+18. Printing statistics.
+
+=== bp_be_top ===
+
+   Number of wires:              80152
+   Number of wire bits:          83145
+   Number of public wires:        9782
+   Number of public wire bits:   12775
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              72715
+     AND2_X1                      1618
+     AND2_X2                       412
+     AND2_X4                         6
+     AND3_X1                      1106
+     AND3_X2                        12
+     AND3_X4                         1
+     AND4_X1                      1129
+     AND4_X2                         2
+     AND4_X4                         5
+     AOI211_X2                       4
+     AOI211_X4                     853
+     AOI21_X1                     2623
+     AOI21_X2                       24
+     AOI21_X4                        3
+     AOI221_X1                       1
+     AOI221_X2                       1
+     AOI221_X4                     134
+     AOI22_X1                      465
+     BUF_X1                      20027
+     BUF_X16                        48
+     BUF_X2                        546
+     BUF_X32                         5
+     BUF_X4                       3389
+     BUF_X8                        508
+     CLKBUF_X2                     643
+     CLKBUF_X3                       4
+     DFF_X1                       8554
+     INV_X1                       2604
+     INV_X2                         67
+     INV_X4                          7
+     INV_X8                          1
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                      8210
+     MUX2_X2                        42
+     NAND2_X1                     1872
+     NAND2_X2                       63
+     NAND2_X4                        4
+     NAND3_X1                     1859
+     NAND3_X2                       38
+     NAND3_X4                        3
+     NAND4_X1                     1887
+     NAND4_X2                        5
+     NAND4_X4                        2
+     NOR2_X1                      1690
+     NOR2_X2                        32
+     NOR2_X4                        13
+     NOR3_X1                       767
+     NOR3_X2                         5
+     NOR3_X4                         2
+     NOR4_X1                       687
+     NOR4_X2                         5
+     NOR4_X4                         4
+     OAI211_X2                    2903
+     OAI211_X4                       1
+     OAI21_X1                     2843
+     OAI21_X2                        6
+     OAI221_X1                    1222
+     OAI22_X1                      998
+     OR2_X1                       1356
+     OR2_X2                          8
+     OR3_X1                        543
+     OR3_X2                          6
+     OR4_X1                        227
+     OR4_X2                          2
+     OR4_X4                          1
+     XNOR2_X1                      414
+     XNOR2_X2                       34
+     XOR2_X1                       137
+     XOR2_X2                        10
+     fakeram45_512x64                8
+     fakeram45_64x15                 1
+     fakeram45_64x96                 1
+
+   Chip area for module '\bp_be_top': 231990.304000
+

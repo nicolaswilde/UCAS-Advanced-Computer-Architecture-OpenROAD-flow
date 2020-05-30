@@ -1,0 +1,81 @@
+
+25. Printing statistics.
+
+=== mriscvcore ===
+
+   Number of wires:               2266
+   Number of wire bits:           2459
+   Number of public wires:         233
+   Number of public wire bits:     426
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2218
+     AND2_X1                       158
+     AND2_X2                        16
+     AND2_X4                        15
+     AND3_X1                        47
+     AND3_X2                         6
+     AND3_X4                         1
+     AND4_X1                        14
+     AND4_X2                         2
+     AOI211_X2                       9
+     AOI211_X4                      38
+     AOI21_X1                      137
+     AOI21_X2                        4
+     AOI21_X4                        1
+     AOI221_X1                       1
+     AOI221_X2                       1
+     AOI221_X4                       9
+     AOI22_X1                       20
+     AOI22_X2                        1
+     BUF_X1                        587
+     BUF_X16                         1
+     BUF_X2                         10
+     BUF_X4                         45
+     BUF_X8                          2
+     CLKBUF_X1                       1
+     CLKBUF_X2                       4
+     DFF_X1                        170
+     INV_X1                        136
+     INV_X2                          5
+     INV_X4                          7
+     INV_X8                          3
+     LOGIC0_X1                       1
+     MUX2_X1                        66
+     NAND2_X1                       81
+     NAND2_X2                        3
+     NAND2_X4                        3
+     NAND3_X1                       53
+     NAND3_X2                        1
+     NAND3_X4                        2
+     NAND4_X1                       65
+     NAND4_X2                        1
+     NAND4_X4                        2
+     NOR2_X1                       117
+     NOR2_X2                         4
+     NOR2_X4                         9
+     NOR3_X1                        40
+     NOR3_X2                         4
+     NOR4_X1                        23
+     NOR4_X2                         1
+     OAI211_X2                      46
+     OAI21_X1                       74
+     OAI21_X2                        1
+     OAI221_X1                       7
+     OAI22_X1                       15
+     OAI22_X2                        1
+     OR2_X1                         29
+     OR2_X2                          3
+     OR3_X1                          9
+     OR3_X4                          1
+     OR4_X1                          9
+     OR4_X2                          1
+     OR4_X4                          1
+     XNOR2_X1                       53
+     XNOR2_X2                        1
+     XOR2_X1                        33
+     XOR2_X2                         7
+
+   Chip area for module '\mriscvcore': 3139.864000
+

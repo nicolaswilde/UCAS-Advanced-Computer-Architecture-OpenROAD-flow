@@ -1,0 +1,175 @@
+
+==========================================================================
+report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: _4174_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _4174_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _4174_/CK (DFF_X1)
+   0.06    0.06 ^ _4174_/QN (DFF_X1)
+   0.04    0.10 ^ _3867_/Z (CLKBUF_X1)
+   0.01    0.12 v _3095_/ZN (AOI211_X2)
+   0.03    0.14 v _3869_/Z (CLKBUF_X1)
+   0.00    0.14 v _4174_/D (DFF_X1)
+           0.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _4174_/CK (DFF_X1)
+   0.00    0.00   library hold time
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -0.14   data arrival time
+---------------------------------------------------------
+           0.14   slack (MET)
+
+
+
+==========================================================================
+report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: _4195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _4237_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _4195_/CK (DFF_X1)
+   0.08    0.08 v _4195_/Q (DFF_X1)
+   0.05    0.12 v _3601_/Z (CLKBUF_X1)
+   0.04    0.16 v _2039_/ZN (AND2_X1)
+   0.03    0.19 v _2041_/ZN (AND2_X1)
+   0.04    0.23 v _2047_/Z (BUF_X2)
+   0.03    0.26 ^ _2053_/ZN (INV_X1)
+   0.02    0.27 v _2055_/ZN (NOR2_X2)
+   0.03    0.31 ^ _2056_/ZN (INV_X2)
+   0.03    0.34 v _2068_/ZN (NAND4_X1)
+   0.12    0.46 v _2069_/ZN (OR4_X1)
+   0.06    0.51 ^ _2075_/ZN (NOR2_X2)
+   0.02    0.53 v _2076_/ZN (INV_X1)
+   0.04    0.58 v _2189_/ZN (AND2_X2)
+   0.03    0.61 ^ _2190_/ZN (INV_X2)
+   0.02    0.62 v _2210_/ZN (NOR2_X2)
+   0.02    0.65 ^ _2211_/ZN (INV_X1)
+   0.02    0.67 v _2213_/ZN (AOI21_X1)
+   0.04    0.70 ^ _2214_/ZN (NOR2_X2)
+   0.05    0.75 ^ _2219_/ZN (AND2_X2)
+   0.01    0.77 v _2437_/ZN (NOR2_X1)
+   0.03    0.80 v _2446_/ZN (AND3_X1)
+   0.06    0.86 ^ _2447_/ZN (NOR3_X1)
+   0.03    0.89 v _2452_/ZN (OAI211_X2)
+   0.03    0.92 v _3732_/Z (CLKBUF_X1)
+   0.00    0.92 v _4237_/D (DFF_X1)
+           0.92   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _4237_/CK (DFF_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -0.92   data arrival time
+---------------------------------------------------------
+           9.04   slack (MET)
+
+
+
+==========================================================================
+report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: _4195_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _4237_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _4195_/CK (DFF_X1)
+   0.08    0.08 v _4195_/Q (DFF_X1)
+   0.05    0.12 v _3601_/Z (CLKBUF_X1)
+   0.04    0.16 v _2039_/ZN (AND2_X1)
+   0.03    0.19 v _2041_/ZN (AND2_X1)
+   0.04    0.23 v _2047_/Z (BUF_X2)
+   0.03    0.26 ^ _2053_/ZN (INV_X1)
+   0.02    0.27 v _2055_/ZN (NOR2_X2)
+   0.03    0.31 ^ _2056_/ZN (INV_X2)
+   0.03    0.34 v _2068_/ZN (NAND4_X1)
+   0.12    0.46 v _2069_/ZN (OR4_X1)
+   0.06    0.51 ^ _2075_/ZN (NOR2_X2)
+   0.02    0.53 v _2076_/ZN (INV_X1)
+   0.04    0.58 v _2189_/ZN (AND2_X2)
+   0.03    0.61 ^ _2190_/ZN (INV_X2)
+   0.02    0.62 v _2210_/ZN (NOR2_X2)
+   0.02    0.65 ^ _2211_/ZN (INV_X1)
+   0.02    0.67 v _2213_/ZN (AOI21_X1)
+   0.04    0.70 ^ _2214_/ZN (NOR2_X2)
+   0.05    0.75 ^ _2219_/ZN (AND2_X2)
+   0.01    0.77 v _2437_/ZN (NOR2_X1)
+   0.03    0.80 v _2446_/ZN (AND3_X1)
+   0.06    0.86 ^ _2447_/ZN (NOR3_X1)
+   0.03    0.89 v _2452_/ZN (OAI211_X2)
+   0.03    0.92 v _3732_/Z (CLKBUF_X1)
+   0.00    0.92 v _4237_/D (DFF_X1)
+           0.92   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _4237_/CK (DFF_X1)
+  -0.04    9.96   library setup time
+           9.96   data required time
+---------------------------------------------------------
+           9.96   data required time
+          -0.92   data arrival time
+---------------------------------------------------------
+           9.04   slack (MET)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+report_check_types -max_transition -all_violators
+--------------------------------------------------------------------------
+
+==========================================================================
+report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             4.07e-05   4.41e-07   1.34e-05   5.46e-05  22.1%
+Combinational          8.44e-05   4.77e-05   6.09e-05   1.93e-04  77.9%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.25e-04   4.81e-05   7.43e-05   2.47e-04 100.0%
+                          50.5%      19.4%      30.0%
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 52055 u^2 100% utilization.

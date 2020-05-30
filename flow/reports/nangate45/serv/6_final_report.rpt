@@ -1,0 +1,165 @@
+
+==========================================================================
+report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: _2737_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2737_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2737_/CK (DFF_X1)
+   0.06    0.06 ^ _2737_/QN (DFF_X1)
+   0.03    0.09 ^ _2450_/Z (CLKBUF_X1)
+   0.01    0.10 v _1911_/ZN (OAI21_X1)
+   0.03    0.13 v _2451_/Z (CLKBUF_X1)
+   0.00    0.13 v _2737_/D (DFF_X1)
+           0.13   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _2737_/CK (DFF_X1)
+   0.00    0.00   library hold time
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -0.13   data arrival time
+---------------------------------------------------------
+           0.13   slack (MET)
+
+
+
+==========================================================================
+report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: _2663_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2698_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2663_/CK (DFF_X1)
+   0.08    0.08 v _2663_/Q (DFF_X1)
+   0.04    0.11 v _2121_/Z (CLKBUF_X2)
+   0.04    0.15 ^ _1505_/ZN (NOR2_X1)
+   0.04    0.19 ^ _1506_/ZN (AND2_X1)
+   0.01    0.20 v _1507_/ZN (INV_X1)
+   0.03    0.23 ^ _1509_/ZN (OAI21_X1)
+   0.02    0.25 v _1511_/ZN (AOI21_X1)
+   0.07    0.32 v _1513_/ZN (OR3_X1)
+   0.04    0.36 v _1515_/ZN (AND2_X2)
+   0.04    0.40 ^ _1528_/ZN (XNOR2_X2)
+   0.04    0.44 ^ _1782_/ZN (AND2_X1)
+   0.01    0.45 v _1783_/ZN (INV_X1)
+   0.06    0.51 v _1785_/Z (MUX2_X1)
+   0.04    0.55 v _1786_/ZN (XNOR2_X1)
+   0.03    0.58 ^ _1787_/ZN (AOI211_X2)
+   0.02    0.60 v _1788_/ZN (NAND2_X1)
+   0.06    0.66 v _1789_/Z (MUX2_X1)
+   0.02    0.68 ^ _1790_/ZN (NOR2_X1)
+   0.03    0.71 ^ _2361_/Z (CLKBUF_X1)
+   0.00    0.71 ^ _2698_/D (DFF_X1)
+           0.71   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _2698_/CK (DFF_X1)
+  -0.03    9.97   library setup time
+           9.97   data required time
+---------------------------------------------------------
+           9.97   data required time
+          -0.71   data arrival time
+---------------------------------------------------------
+           9.26   slack (MET)
+
+
+
+==========================================================================
+report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: _2663_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2698_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2663_/CK (DFF_X1)
+   0.08    0.08 v _2663_/Q (DFF_X1)
+   0.04    0.11 v _2121_/Z (CLKBUF_X2)
+   0.04    0.15 ^ _1505_/ZN (NOR2_X1)
+   0.04    0.19 ^ _1506_/ZN (AND2_X1)
+   0.01    0.20 v _1507_/ZN (INV_X1)
+   0.03    0.23 ^ _1509_/ZN (OAI21_X1)
+   0.02    0.25 v _1511_/ZN (AOI21_X1)
+   0.07    0.32 v _1513_/ZN (OR3_X1)
+   0.04    0.36 v _1515_/ZN (AND2_X2)
+   0.04    0.40 ^ _1528_/ZN (XNOR2_X2)
+   0.04    0.44 ^ _1782_/ZN (AND2_X1)
+   0.01    0.45 v _1783_/ZN (INV_X1)
+   0.06    0.51 v _1785_/Z (MUX2_X1)
+   0.04    0.55 v _1786_/ZN (XNOR2_X1)
+   0.03    0.58 ^ _1787_/ZN (AOI211_X2)
+   0.02    0.60 v _1788_/ZN (NAND2_X1)
+   0.06    0.66 v _1789_/Z (MUX2_X1)
+   0.02    0.68 ^ _1790_/ZN (NOR2_X1)
+   0.03    0.71 ^ _2361_/Z (CLKBUF_X1)
+   0.00    0.71 ^ _2698_/D (DFF_X1)
+           0.71   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _2698_/CK (DFF_X1)
+  -0.03    9.97   library setup time
+           9.97   data required time
+---------------------------------------------------------
+           9.97   data required time
+          -0.71   data arrival time
+---------------------------------------------------------
+           9.26   slack (MET)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+report_check_types -max_transition -all_violators
+--------------------------------------------------------------------------
+
+==========================================================================
+report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             4.56e-05   5.98e-07   1.61e-05   6.23e-05  35.0%
+Combinational          3.97e-05   4.28e-05   3.30e-05   1.16e-04  65.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  8.53e-05   4.34e-05   4.91e-05   1.78e-04 100.0%
+                          48.0%      24.4%      27.6%
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 39102 u^2 100% utilization.

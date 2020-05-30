@@ -1,0 +1,84 @@
+
+23. Printing statistics.
+
+=== aes_cipher_top ===
+
+   Number of wires:              19979
+   Number of wire bits:          20360
+   Number of public wires:         536
+   Number of public wire bits:     917
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              19571
+     AND2_X1                      3198
+     AND2_X2                       436
+     AND2_X4                       238
+     AND3_X1                       490
+     AND3_X2                         1
+     AND3_X4                         1
+     AND4_X1                      1157
+     AND4_X2                        16
+     AND4_X4                         5
+     AOI211_X2                      36
+     AOI211_X4                     142
+     AOI21_X1                      223
+     AOI21_X2                        1
+     AOI221_X1                      32
+     AOI221_X2                       2
+     AOI221_X4                     133
+     AOI22_X1                      452
+     AOI22_X2                        1
+     AOI22_X4                        1
+     BUF_X1                       1200
+     BUF_X16                         5
+     BUF_X2                        574
+     BUF_X32                        13
+     BUF_X4                        670
+     BUF_X8                         58
+     CLKBUF_X2                      38
+     CLKBUF_X3                       5
+     DFF_X1                        530
+     INV_X1                       1490
+     INV_X16                        12
+     INV_X2                         23
+     INV_X32                        58
+     INV_X4                         22
+     INV_X8                          5
+     MUX2_X1                       249
+     NAND2_X1                     1801
+     NAND2_X2                       16
+     NAND2_X4                        9
+     NAND3_X1                      435
+     NAND3_X4                        1
+     NAND4_X1                      714
+     NAND4_X2                        5
+     NOR2_X1                       799
+     NOR2_X2                        82
+     NOR2_X4                       110
+     NOR3_X1                       184
+     NOR3_X4                         1
+     NOR4_X1                       804
+     NOR4_X2                        45
+     NOR4_X4                        14
+     OAI211_X2                     538
+     OAI21_X1                      981
+     OAI21_X4                        3
+     OAI221_X1                      56
+     OAI22_X1                       38
+     OR2_X1                        195
+     OR2_X2                         12
+     OR2_X4                          5
+     OR3_X1                         53
+     OR3_X2                          1
+     OR3_X4                          2
+     OR4_X1                        120
+     OR4_X2                         52
+     OR4_X4                         35
+     XNOR2_X1                      764
+     XNOR2_X2                       40
+     XOR2_X1                       119
+     XOR2_X2                        20
+
+   Chip area for module '\aes_cipher_top': 26639.900000
+

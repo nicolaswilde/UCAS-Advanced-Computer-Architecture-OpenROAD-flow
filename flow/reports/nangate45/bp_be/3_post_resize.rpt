@@ -1,0 +1,62 @@
+
+==========================================================================
+report_floating_nets
+--------------------------------------------------------------------------
+Warning: found 5617 floatiing nets.
+
+==========================================================================
+report_checks
+--------------------------------------------------------------------------
+Startpoint: be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem
+            (rising edge-triggered flip-flop clocked by CLK)
+Endpoint: lce_data_resp_o[337] (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock CLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem/clk (fakeram45_512x64)
+   0.27    0.27 v be_mmu.dcache.data_mem_7__data_mem.macro_mem.mem/rd_out[17] (fakeram45_512x64)
+   3.77    4.04 v _124625_/Z (BUF_X4)
+   0.16    4.20 v buffer3995/Z (BUF_X1)
+   0.03    4.23 ^ _106405_/ZN (NAND4_X1)
+   0.04    4.27 v _106407_/ZN (OAI221_X1)
+   0.12    4.38 ^ _106408_/ZN (AOI211_X4)
+   0.05    4.43 ^ _106412_/ZN (OR3_X1)
+   0.05    4.48 v _106414_/ZN (AOI211_X4)
+   0.04    4.52 ^ _106416_/ZN (NOR2_X4)
+   0.09    4.61 v _111843_/ZN (AOI21_X4)
+   0.63    5.24 v _133044_/Z (CLKBUF_X1)
+   0.02    5.26 v buffer2155/Z (BUF_X1)
+   0.00    5.26 v lce_data_resp_o[337] (out)
+           5.26   data arrival time
+
+   5.40    5.40   clock CLK (rise edge)
+   0.00    5.40   clock network delay (ideal)
+   0.00    5.40   clock reconvergence pessimism
+  -0.60    4.80   output external delay
+           4.80   data required time
+---------------------------------------------------------
+           4.80   data required time
+          -5.26   data arrival time
+---------------------------------------------------------
+          -0.46   slack (VIOLATED)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns -12.92
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns -0.46
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 1032332 u^2 13% utilization.

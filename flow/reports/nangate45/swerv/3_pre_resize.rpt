@@ -1,0 +1,124 @@
+
+==========================================================================
+report_checks
+--------------------------------------------------------------------------
+Startpoint: _244475_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _250708_ (recovery check against rising-edge clock core_clock)
+Path Group: **async_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _244475_/CK (DFFR_X1)
+   0.08    0.08 v _244475_/Q (DFFR_X1)
+   0.03    0.11 v _224648_/Z (BUF_X1)
+   0.04    0.16 ^ _138662_/ZN (INV_X1)
+   0.03    0.19 ^ _189032_/ZN (OR2_X1)
+   0.03    0.22 ^ _189033_/ZN (AND2_X1)
+  66.60   66.82 ^ _234941_/Z (BUF_X1)
+ 242.71  309.53 ^ _250708_/RN (DFFR_X1)
+         309.53   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _250708_/CK (DFFR_X1)
+ -15.26   -5.26   library recovery time
+          -5.26   data required time
+---------------------------------------------------------
+          -5.26   data required time
+        -309.53   data arrival time
+---------------------------------------------------------
+        -314.80   slack (VIOLATED)
+
+
+Startpoint: _246691_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _246693_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _246691_/CK (DFFR_X1)
+   0.11    0.11 v _246691_/Q (DFFR_X1)
+   0.11    0.23 v _223132_/Z (BUF_X1)
+   0.33    0.56 ^ _133332_/ZN (NOR3_X1)
+   0.17    0.73 ^ _133334_/ZN (AND2_X1)
+   0.11    0.84 ^ _133337_/ZN (AND4_X1)
+   0.05    0.90 ^ _133347_/Z (MUX2_X1)
+   0.06    0.95 ^ _133351_/ZN (AND2_X1)
+   0.02    0.97 v _133369_/ZN (AOI21_X1)
+   0.17    1.14 ^ _133372_/ZN (NOR2_X1)
+   0.03    1.17 v _133621_/ZN (XNOR2_X1)
+   0.12    1.29 ^ _133626_/ZN (AOI211_X4)
+   0.02    1.31 v _133644_/ZN (NAND3_X1)
+   0.03    1.33 ^ _133645_/ZN (AOI21_X1)
+   0.05    1.38 v _133668_/ZN (OAI21_X1)
+   0.09    1.47 ^ _133670_/ZN (NOR2_X1)
+   0.12    1.59 v _133700_/ZN (OAI221_X1)
+   0.14    1.73 v _133701_/ZN (OR2_X2)
+   0.07    1.80 v _140477_/ZN (AND2_X1)
+   0.06    1.86 v _140485_/ZN (AND3_X1)
+   0.10    1.96 ^ _140506_/ZN (NOR3_X1)
+   0.02    1.99 v _140507_/ZN (INV_X1)
+   0.15    2.13 ^ _140537_/ZN (NOR3_X1)
+   0.01    2.15 v _140564_/ZN (INV_X1)
+   0.09    2.24 ^ _140565_/ZN (NOR3_X1)
+   0.07    2.31 v _140577_/ZN (NAND3_X1)
+   0.18    2.49 ^ _140589_/ZN (NOR2_X1)
+   0.07    2.56 v _140590_/ZN (AOI221_X4)
+   0.04    2.61 v _140604_/ZN (AND2_X1)
+   0.07    2.67 ^ _140605_/ZN (NOR3_X1)
+   0.05    2.73 v _148284_/ZN (AOI211_X4)
+   0.02    2.75 ^ _148286_/ZN (OAI221_X1)
+   0.02    2.76 v _148287_/ZN (AOI21_X1)
+   0.10    2.87 v _148293_/ZN (AND3_X1)
+   0.11    2.98 ^ _148294_/ZN (INV_X1)
+   0.09    3.07 ^ _148295_/ZN (OR2_X1)
+   0.03    3.10 ^ _148296_/Z (BUF_X4)
+   0.01    3.11 v _196092_/ZN (NOR2_X1)
+   0.05    3.17 ^ _196094_/ZN (AOI21_X1)
+   0.06    3.22 v _196096_/ZN (OAI21_X2)
+   0.13    3.36 ^ _196097_/ZN (NOR2_X1)
+   0.04    3.39 ^ _196098_/Z (BUF_X8)
+   0.05    3.45 ^ _196216_/ZN (AND2_X1)
+   0.02    3.46 v _196217_/ZN (INV_X1)
+   0.04    3.50 v _196218_/Z (BUF_X4)
+   0.07    3.57 v _196233_/Z (BUF_X4)
+   0.08    3.65 ^ _196568_/ZN (OAI221_X1)
+   0.09    3.74 ^ _236996_/Z (BUF_X1)
+   0.02    3.76 ^ _246693_/D (DFFR_X1)
+           3.76   data arrival time
+
+  10.00   10.00   clock core_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _246693_/CK (DFFR_X1)
+  -0.05    9.95   library setup time
+           9.95   data required time
+---------------------------------------------------------
+           9.95   data required time
+          -3.76   data arrival time
+---------------------------------------------------------
+           6.19   slack (MET)
+
+
+
+==========================================================================
+report_tns
+--------------------------------------------------------------------------
+tns -2629044.50
+
+==========================================================================
+report_wns
+--------------------------------------------------------------------------
+wns -314.80
+
+==========================================================================
+report_design_area
+--------------------------------------------------------------------------
+Design area 828525 u^2 10% utilization.

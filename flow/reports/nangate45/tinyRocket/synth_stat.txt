@@ -1,0 +1,78 @@
+
+22. Printing statistics.
+
+=== RocketTile ===
+
+   Number of wires:              42587
+   Number of wire bits:          42811
+   Number of public wires:        4469
+   Number of public wire bits:    4693
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              38636
+     AND2_X1                      1549
+     AND2_X2                       112
+     AND2_X4                        20
+     AND3_X1                      1000
+     AND3_X2                        15
+     AND3_X4                         1
+     AND4_X1                       359
+     AND4_X2                         1
+     AOI211_X2                       3
+     AOI211_X4                     365
+     AOI21_X1                     1671
+     AOI21_X2                        8
+     AOI221_X4                     102
+     AOI22_X1                      213
+     BUF_X1                       8758
+     BUF_X16                         7
+     BUF_X2                        256
+     BUF_X32                         5
+     BUF_X4                       1382
+     BUF_X8                        109
+     CLKBUF_X2                     262
+     CLKBUF_X3                       2
+     DFF_X1                       3976
+     INV_X1                       1661
+     INV_X16                         2
+     INV_X2                         44
+     INV_X32                         3
+     INV_X4                          6
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                      4627
+     MUX2_X2                         4
+     NAND2_X1                     2176
+     NAND2_X2                       12
+     NAND2_X4                        5
+     NAND3_X1                     1688
+     NAND3_X2                        3
+     NAND4_X1                      667
+     NAND4_X2                        3
+     NAND4_X4                        3
+     NOR2_X1                      1409
+     NOR2_X2                        36
+     NOR2_X4                         3
+     NOR3_X1                       424
+     NOR3_X2                         1
+     NOR4_X1                       136
+     NOR4_X2                         5
+     NOR4_X4                         1
+     OAI211_X2                    1107
+     OAI21_X1                     1324
+     OAI21_X2                        6
+     OAI221_X1                     152
+     OAI22_X1                       96
+     OR2_X1                        946
+     OR2_X2                         14
+     OR2_X4                          6
+     OR3_X1                        256
+     OR3_X2                          2
+     OR4_X1                         53
+     XNOR2_X1                      970
+     XOR2_X1                       605
+     fakeram45_64x32                 2
+
+   Chip area for module '\RocketTile': 62328.854000
+

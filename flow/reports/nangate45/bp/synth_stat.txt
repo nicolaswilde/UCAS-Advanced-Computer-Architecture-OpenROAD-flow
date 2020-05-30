@@ -1,0 +1,81 @@
+
+18. Printing statistics.
+
+=== black_parrot ===
+
+   Number of wires:             246900
+   Number of wire bits:         248084
+   Number of public wires:       31599
+   Number of public wire bits:   32783
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             218035
+     AND2_X1                      5823
+     AND2_X2                       827
+     AND2_X4                         1
+     AND3_X1                      3404
+     AND3_X2                        19
+     AND3_X4                         3
+     AND4_X1                      2166
+     AND4_X2                         3
+     AOI211_X4                    1234
+     AOI21_X1                     3931
+     AOI21_X2                       14
+     AOI221_X4                     411
+     AOI22_X1                      889
+     BUF_X1                      68735
+     BUF_X16                        21
+     BUF_X2                       1230
+     BUF_X32                         4
+     BUF_X4                       9019
+     BUF_X8                       1006
+     CLKBUF_X2                    1705
+     CLKBUF_X3                      30
+     DFF_X1                      27884
+     INV_X1                       6841
+     INV_X16                         1
+     INV_X2                        121
+     INV_X32                         7
+     INV_X4                         17
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                     32647
+     NAND2_X1                     9128
+     NAND2_X2                       60
+     NAND3_X1                     6238
+     NAND3_X2                       18
+     NAND3_X4                        1
+     NAND4_X1                     3331
+     NAND4_X2                        4
+     NOR2_X1                      5419
+     NOR2_X2                        52
+     NOR2_X4                         1
+     NOR3_X1                      1728
+     NOR3_X2                         4
+     NOR3_X4                         9
+     NOR4_X1                      1136
+     NOR4_X2                         1
+     OAI211_X2                    5105
+     OAI21_X1                     6565
+     OAI21_X2                        5
+     OAI221_X1                    1822
+     OAI22_X1                     2509
+     OAI22_X2                        1
+     OR2_X1                       4529
+     OR2_X2                         43
+     OR2_X4                          1
+     OR3_X1                        714
+     OR3_X2                          3
+     OR3_X4                          5
+     OR4_X1                        679
+     XNOR2_X1                      777
+     XOR2_X1                       128
+     fakeram45_256x95                1
+     fakeram45_512x64               17
+     fakeram45_64x15                 1
+     fakeram45_64x7                  1
+     fakeram45_64x96                 4
+
+   Chip area for module '\black_parrot': 610040.676000
+

@@ -1,0 +1,97 @@
+
+141. Printing statistics.
+
+=== e203_cpu ===
+
+   Number of wires:              31544
+   Number of wire bits:          32757
+   Number of public wires:        2277
+   Number of public wire bits:    3490
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              29925
+     AND2_X1                      1299
+     AND2_X2                       221
+     AND2_X4                        88
+     AND3_X1                      1238
+     AND3_X2                        37
+     AND3_X4                        14
+     AND4_X1                       796
+     AND4_X2                        18
+     AND4_X4                         2
+     AOI211_X2                      10
+     AOI211_X4                     197
+     AOI21_X1                     1069
+     AOI21_X2                        7
+     AOI21_X4                        5
+     AOI221_X1                       7
+     AOI221_X2                       1
+     AOI221_X4                     268
+     AOI22_X1                      441
+     AOI22_X2                        1
+     BUF_X1                       5819
+     BUF_X16                        18
+     BUF_X2                        432
+     BUF_X32                         5
+     BUF_X4                       1379
+     BUF_X8                         99
+     CLKBUF_X1                       2
+     CLKBUF_X2                     290
+     CLKBUF_X3                       7
+     DFFR_X1                       668
+     DFFS_X1                        16
+     DFF_X1                       1488
+     DLH_X1                          8
+     INV_X1                       1585
+     INV_X16                         3
+     INV_X2                         47
+     INV_X32                        15
+     INV_X4                         24
+     INV_X8                         10
+     LOGIC0_X1                       1
+     LOGIC1_X1                       1
+     MUX2_X1                      1873
+     MUX2_X2                         2
+     NAND2_X1                      945
+     NAND2_X2                       26
+     NAND2_X4                       20
+     NAND3_X1                     2598
+     NAND3_X2                        5
+     NAND3_X4                        5
+     NAND4_X1                     1606
+     NAND4_X4                        2
+     NOR2_X1                       964
+     NOR2_X2                        47
+     NOR2_X4                        50
+     NOR3_X1                       416
+     NOR3_X2                        11
+     NOR3_X4                        10
+     NOR4_X1                       382
+     NOR4_X2                         3
+     NOR4_X4                         3
+     OAI211_X2                     830
+     OAI211_X4                       2
+     OAI21_X1                     1229
+     OAI21_X2                        6
+     OAI21_X4                        4
+     OAI221_X1                     152
+     OAI221_X2                       1
+     OAI22_X1                      160
+     OAI22_X2                        1
+     OAI22_X4                        1
+     OR2_X1                        274
+     OR2_X2                          9
+     OR2_X4                          8
+     OR3_X1                        161
+     OR3_X2                          8
+     OR3_X4                         13
+     OR4_X1                         67
+     OR4_X2                          2
+     XNOR2_X1                      324
+     XNOR2_X2                        6
+     XOR2_X1                        59
+     XOR2_X2                         4
+
+   Chip area for module '\e203_cpu': 44607.136000
+

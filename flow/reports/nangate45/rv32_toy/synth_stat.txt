@@ -1,0 +1,85 @@
+
+26. Printing statistics.
+
+=== Core ===
+
+   Number of wires:              76718
+   Number of wire bits:          76875
+   Number of public wires:        8763
+   Number of public wire bits:    8920
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              69004
+     AND2_X1                      1156
+     AND2_X2                       131
+     AND2_X4                         9
+     AND3_X1                       566
+     AND3_X2                         9
+     AND3_X4                         5
+     AND4_X1                       736
+     AND4_X2                        13
+     AOI211_X2                      69
+     AOI211_X4                     247
+     AOI21_X1                     5350
+     AOI21_X2                       15
+     AOI21_X4                        3
+     AOI221_X1                      18
+     AOI221_X4                     608
+     AOI22_X1                     1135
+     AOI22_X2                        5
+     AOI22_X4                        1
+     BUF_X1                      17032
+     BUF_X16                        20
+     BUF_X2                        283
+     BUF_X32                         1
+     BUF_X4                       5513
+     BUF_X8                        202
+     CLKBUF_X1                      32
+     CLKBUF_X2                     289
+     CLKBUF_X3                       1
+     DFF_X1                       7803
+     INV_X1                       1601
+     INV_X16                         1
+     INV_X2                         51
+     INV_X32                        11
+     INV_X4                          4
+     INV_X8                          2
+     MUX2_X1                      4522
+     NAND2_X1                     1114
+     NAND2_X2                       17
+     NAND2_X4                        1
+     NAND3_X1                     2275
+     NAND3_X2                        1
+     NAND4_X1                     7113
+     NAND4_X2                        2
+     NAND4_X4                        1
+     NOR2_X1                      1031
+     NOR2_X2                        74
+     NOR2_X4                        10
+     NOR3_X1                       336
+     NOR3_X2                         7
+     NOR3_X4                         2
+     NOR4_X1                       336
+     NOR4_X2                        30
+     OAI211_X2                     559
+     OAI211_X4                       1
+     OAI21_X1                     5001
+     OAI21_X2                       11
+     OAI221_X1                     612
+     OAI22_X1                      733
+     OAI22_X2                        2
+     OR2_X1                        462
+     OR2_X2                          7
+     OR2_X4                          4
+     OR3_X1                        210
+     OR3_X2                          3
+     OR3_X4                          1
+     OR4_X1                        109
+     XNOR2_X1                     1196
+     XNOR2_X2                       16
+     XOR2_X1                       279
+     XOR2_X2                         4
+
+   Chip area for module '\Core': 110394.256000
+

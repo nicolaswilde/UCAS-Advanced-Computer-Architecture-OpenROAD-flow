@@ -1,0 +1,90 @@
+
+17. Printing statistics.
+
+=== darkriscv ===
+
+   Number of wires:              22429
+   Number of wire bits:          22590
+   Number of public wires:        2287
+   Number of public wire bits:    2448
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              20248
+     AND2_X1                       476
+     AND2_X2                        48
+     AND2_X4                        36
+     AND3_X1                       236
+     AND3_X2                         4
+     AND3_X4                         1
+     AND4_X1                        20
+     AND4_X2                         1
+     AOI211_X2                      16
+     AOI211_X4                      72
+     AOI21_X1                      815
+     AOI21_X2                       69
+     AOI21_X4                        8
+     AOI221_X4                       9
+     AOI22_X1                      441
+     AOI22_X2                       54
+     AOI22_X4                       47
+     BUF_X1                       5338
+     BUF_X16                        43
+     BUF_X2                        100
+     BUF_X32                        54
+     BUF_X4                        717
+     BUF_X8                         84
+     CLKBUF_X2                     199
+     CLKBUF_X3                       1
+     DFF_X1                       2274
+     INV_X1                        394
+     INV_X16                         1
+     INV_X2                         31
+     INV_X32                         6
+     INV_X4                         17
+     INV_X8                          5
+     MUX2_X1                      2958
+     MUX2_X2                       292
+     NAND2_X1                      900
+     NAND2_X2                       97
+     NAND2_X4                       49
+     NAND3_X1                      529
+     NAND3_X2                       34
+     NAND3_X4                        9
+     NAND4_X1                       18
+     NAND4_X2                        1
+     NOR2_X1                       543
+     NOR2_X2                        29
+     NOR2_X4                        27
+     NOR3_X1                       147
+     NOR3_X2                         2
+     NOR3_X4                         6
+     NOR4_X1                        38
+     NOR4_X2                        10
+     NOR4_X4                        39
+     OAI211_X2                     655
+     OAI211_X4                       9
+     OAI21_X1                      489
+     OAI21_X2                       10
+     OAI21_X4                        6
+     OAI221_X1                      40
+     OAI221_X2                      11
+     OAI22_X1                       50
+     OAI22_X2                        2
+     OAI22_X4                        1
+     OR2_X1                        523
+     OR2_X2                         39
+     OR2_X4                         19
+     OR3_X1                        115
+     OR3_X2                          1
+     OR3_X4                          4
+     OR4_X1                          2
+     OR4_X2                          1
+     OR4_X4                          3
+     XNOR2_X1                      320
+     XNOR2_X2                       75
+     XOR2_X1                       289
+     XOR2_X2                       239
+
+   Chip area for module '\darkriscv': 34803.440000
+
