@@ -4,7 +4,7 @@
 
 本文是中国科学院大学《高级计算机体系结构》课程实验报告，使用开源的OpenROAD-flow工具链完成芯片从RTL设计到GDS版图的全流程。
 
-实验报告使用Markdown文件格式编写，转为PDF格式后字体较小，建议调整为200%查看。如果有互联网连接，可以直接访问https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/blob/master/report/report.md 查看实验报告排版效果更佳，https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/ 这个repository中的内容与在课程网站上提交的内容完全一致。
+实验报告使用Markdown文件格式编写，转为PDF格式后字体较小，建议调整为200%查看。如果有互联网连接，可以直接访问https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/blob/master/report/report.md 查看实验报告排版效果更佳，不过要注意需要使用VPN才能正确查看Github中的图片。https://github.com/nicolaswilde/UCAS-Advanced-Computer-Architecture-OpenROAD-flow/ 这个repository中的内容与在课程网站上提交的内容完全一致。
 
 ## 1 实验内容
 
