@@ -1,4 +1,4 @@
-# 《高级计算机系统结构》课程Project实验报告
+﻿# 《高级计算机系统结构》课程Project实验报告
 
 ## 王重熙 201928013229111
 
@@ -351,47 +351,47 @@ OpenROAD-flow通过`DESIGN_CONFIG`这个变量来指定具体的设计，demo中
 
 - aes
 
-    ![aes GDS](./image/aes.png)
+    ![aes GDS](./image/aes.PNG)
 
 - black_parrot
 
-    ![black parrot GDS](./image/black_parrot.png)
+    ![black parrot GDS](./image/black_parrot.PNG)
 
 - black_parrot backend
 
-    ![bp_be_top GDS](./image/bp_be.png)
+    ![bp_be_top GDS](./image/bp_be.PNG)
 
 - black_parrot frontend
 
-    ![bp_fe_top GDS](./image/bp_fe.png)
+    ![bp_fe_top GDS](./image/bp_fe.PNG)
 
 - black_parrot multi
 
-    ![bp_multi_top GDS](./image/bp_multi.png)
+    ![bp_multi_top GDS](./image/bp_multi.PNG)
 
 - dynamic_node
 
-    ![dynamic_node GDS](./image/dynamic_node.png)
+    ![dynamic_node GDS](./image/dynamic_node.PNG)
 
 - gcd
 
-    ![gcd GDS](./image/gcd.png)
+    ![gcd GDS](./image/gcd.PNG)
 
 - ibex
 
-    ![ibex GDS](./image/ibex.png)
+    ![ibex GDS](./image/ibex.PNG)
 
 - jpeg
 
-    ![jpeg GDS](./image/jpeg.png)
+    ![jpeg GDS](./image/jpeg.PNG)
 
 - swerv
 
-    ![swerv GDS](./image/swerv.png)
+    ![swerv GDS](./image/swerv.PNG)
 
 - tinyRocket
 
-    ![tinyRocket GDS](./image/tinyRocket.png)
+    ![tinyRocket GDS](./image/tinyRocket.PNG)
 
 
 在`OpenROAD-flow/flow/logs/nangate45/design_name/`和`OpenROAD-flow/flow/reports/nangate45/design_name/`中，可以看到具体每一个设计的RTL到GDS全流程的日志和报告，下表是`OpenROAD-flow/flow/reports/nangate45/design_name/6_final_report.rpt`中最终报告的每个芯片设计的功耗（Power）和面积（Design Area）。
@@ -547,31 +547,31 @@ tinyriscv       | (0, 0) <br> (435, 435)          | (10.07, 11.2) <br> (425, 425
 
 - mriscv
 
-    ![mriscv GDS](./image/mriscv.png)
+    ![mriscv GDS](./image/mriscv.PNG)
 
 - HummingbirdE203
 
-    ![HummingbirdE203 GDS](./image/HummingbirdE203.png)
+    ![HummingbirdE203 GDS](./image/HummingbirdE203.PNG)
 
 - picorv32
 
-    ![picorv32 GDS](./image/picorv32.png)
+    ![picorv32 GDS](./image/picorv32.PNG)
 
 - serv
 
-    ![serv GDS](./image/serv.png)
+    ![serv GDS](./image/serv.PNG)
 
 - biriscv
 
-    ![biriscv GDS](./image/biriscv.png)
+    ![biriscv GDS](./image/biriscv.PNG)
 
 - darkriscv
 
-    ![darkriscv GDS](./image/darkriscv.png)
+    ![darkriscv GDS](./image/darkriscv.PNG)
 
 - tinyriscv
 
-    ![tinyriscv GDS](./image/tinyriscv.png)
+    ![tinyriscv GDS](./image/tinyriscv.PNG)
 
 可以看到，这些版图的利用率较高，相比于demo中的11个版图有着明显的提高，说明4.3.2节中对OpenROAD-flow工具链生成芯片面积的估计比较准确。
 
